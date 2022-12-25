@@ -6,7 +6,7 @@
 		"quals": "(BA Eng & Lit studies, PGD Pol sci, MSc IR & Diplomacy)",
 		"qualification": "BA English & Literary studies, PGD Political Science, MSc Political Science (International Relations & Diplomacy)",
 		"institution": "University of Nigeria Nsukka",
-		"detail": "I'm not crazy about it but I am good with pen (keyboard) and research tools. I have publications and ongoing studies in public health, population, ageing, peace & conflict, power dynamics & alliances, trade relations … ",
+		"detail": "The knowledge and skills gained here have resulted in completed and ongoing studies in public health, population, ageing, peace & conflict, power dynamics & alliances, trade relations, ...",
 		"tools": [
 			{
 				"name": "NVivo",
@@ -34,7 +34,7 @@
 		"quals": "(ALX Sofware Engineering (in view); MOOCs)",
 		"qualification": "ALX Sofware Engineering; Massive Open Online Courses (MOOCs)",
 		"institution": "Holberton School; Udemy",
-		"detail": "I love to build, code. I have learnt and worked with different tools to create beautiful web experiences. HTML/CSS and JavaScript were pretty cool but I am quite fascinated by Jamstack, React.js, Next.js and Firebase.",
+		"detail": "Design and build solutions with code. Software Engineering gives you wings, and I quite love it. You learn and work with amazing people, tools and tecknologies, doing hard things.",
 		"tools": [
 			{
 				"name": "Git",
@@ -83,10 +83,10 @@
 		"id": "ui-ux-graphics",
 		"logo": "/assets/uiuxgd/uiuxCard.svg",
 		"title": "UI/UX & Graphic Design",
-		"quals": "(You'd be surprised how much you can learn through  YouTube and MOOCs)",
-		"qualification": "Massive Open Online Courses (MOOCs)",
+		"quals": "Massive Open Online Courses (MOOCs)",
+		"qualification": "Massive Open Online Courses (MOOCs) and Certifications",
 		"institution": "Udemy; YouTube",
-		"detail": "The quest for grand user experience and quality vector graphics has led me to discover, learn and build awesome designs and experiences with Adobe Photoshop, and Adobe Illustrator, Adobe Xd, and Figma.",
+		"detail": "User Experience, User Interface, and Visual Designs are essential skills for today's digital world: product creation, prototyping and testing help businesses stay ahead and focused.",
 		"tools": [
 			{
 				"name": "Adobe Photoshop",
@@ -119,10 +119,10 @@
 		"id": "analytics-pubs",
 		"logo": "/assets/biad/analyticsCard.svg",
 		"title": "Business I/A & Digital Pub",
-		"quals": "(Kinda different areas right? MOOCs to the rescue again)",
-		"qualification": "Massive Open Online Courses (MOOCs)",
+		"quals": "Massive Open Online Courses (MOOCs)",
+		"qualification": "Massive Open Online Courses (MOOCs) and Certifications",
 		"institution": "Udemy; YouTube",
-		"detail": "Building dashboards and running analyses with NumPy, Pandas, Excel, Matplotlib, Tableau, and MySQL Workbench are every bit as fulfilling as designing that perfect digital publication with Adobe InDesign",
+		"detail": "Building dashboards and running analyses with NumPy, Pandas, Excel, Matplotlib, Tableau, and MySQL Workbench are every bit as fulfilling as designing that perfect digital product and publication.",
 		"tools": [
 			{
 				"name": "Adobe InCopy",

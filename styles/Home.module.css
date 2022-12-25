@@ -73,28 +73,34 @@
 	}
 	.hero .style svg {
 		height: 30rem;
-		opacity: 0.5;
+		opacity: 0.3;
 	}
 }
 
 @media (max-width: 520px) {
+	.hero .title {
+		font-size: 3.2rem;
+		line-height: 4rem;
+	}
 	.hero .textP {
-		align-self: flex-end;
-		text-align: right;
+		font-weight: 800;
 	}
 	.hero .style svg {
-		height: 20rem;
 		opacity: 0.2;
 	}
+	.hero .textP,
 	.heroContact {
-		margin-top: -0.5rem;
-		align-self: flex-end;
+		font-size: 2.2rem;
+		letter-spacing: 0.04rem;
+		line-height: 3rem;
+	}
+	.heroContact {
+		margin-top: -0.2rem;
 	}
 }
-@media (max-width: 406px) {
+@media (max-width: 419px) {
 	.hero .title {
 		font-size: 3rem;
-		font-weight: 900;
 		letter-spacing: 0.05rem;
 		line-height: 3.7rem;
 		margin-left: 0;
@@ -102,13 +108,12 @@
 	.hero .textP,
 	.heroContact {
 		font-size: 2rem;
-		font-weight: 800;
-		letter-spacing: 0.04rem;
 		line-height: 2.7rem;
 	}
 }
-@media (max-width: 380px) {
+@media (max-width: 389px) {
 	.hero .style svg {
-		height: 15rem;
+		height: 14rem;
+		opacity: 0.1;
 	}
 }

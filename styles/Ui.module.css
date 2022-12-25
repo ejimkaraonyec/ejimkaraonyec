@@ -39,7 +39,7 @@
 }
 .input,
 .textarea {
-	background-color: var(--accent);
+	background-color: var(--background);
 }
 .btn {
 	gap: var(--gap-foxtrot);
@@ -51,5 +51,4 @@
 }
 .error {
 	border: 0.02rem solid var(--brand);
-	/* color: var(--brand); */
 }

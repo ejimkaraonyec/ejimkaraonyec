@@ -19,7 +19,7 @@ export const Inquiry = ({ skill = false, interest }) => {
 		emptyFields,
 		showModal,
 		setShowModal,
-	} = useFetch('/api/inquiry', 'POST');
+	} = useFetch('/api/enquiry', 'POST');
 
 	const taplaceholher = (skill, interest) => {
 		if (!skill) {
