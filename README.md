@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Header](/gitart.svg 'ejimkaraonyec')](https://ejimkaraonyec.com/)
 
-## Getting Started
+## Technologies & Tools
 
-First, run the development server:
+![Bash](https://img.shields.io/badge/Bash-purple?style=flat-square&logo=gnu-bash)
+![Linux](https://img.shields.io/badge/Linux-black?style=flat-square&logo=linux)
+![C](https://img.shields.io/badge/-C-00599C?style=flat-square&logo=c)
+![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
+![Jamstack](https://img.shields.io/badge/-Jamstack-purple?style=flat-square&logo=jamstack&logoColor=ff4500)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
+![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js)
+![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
+![Express](https://img.shields.io/badge/Express-black?style=flat-square&logo=express)
+![Firebase](https://img.shields.io/badge/Firebase-ff4500?style=flat-square&logo=firebase)
+![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
+![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql)
+![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat-square&logo=graphql)
+![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+![Tableau](https://img.shields.io/badge/Tableau-005571?style=flat-square&logo=tableau)
+![Anaconda](https://img.shields.io/badge/-Anaconda-311C87?style=flat-square&logo=anaconda)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Reach out!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![](https://img.shields.io/badge/linkedin-ff4500?style=social&logo=linkedin)](https://www.linkedin.com/in/ejimkaraonyec)
+[![](https://img.shields.io/badge/@ejimkaraonyec-ff4500?style=social&logo=telegram)](https://t.me/ejimkaraonyec)
+[![](https://img.shields.io/badge/Google%20Scholar-ff4500?style=social&logo=google-scholar)](https://scholar.google.com/citations?user=b6OGHAgAAAAJ&hl=en)
+[![](https://img.shields.io/badge/portfolio-ff4500?style=social&logo=github)](https://ejimkaraonyec.com)

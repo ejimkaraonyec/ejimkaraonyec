@@ -1,0 +1,191 @@
+[
+	{
+		"id": "liblearn",
+		"cat": "SE; UI/UX Design",
+		"title": "liblearn",
+		"detail": [
+			"A platform for researchers, authors if you may, to share and reach a general non-expert audience and contribute their knowledge to policymaking and development.",
+			"Research stories, white papers, policies, welfare issues and publications from varying other areas are made here by acclaimed and fledging scholars."
+		],
+		"expanded": [
+			"Experience the joy of making publications without the strict vetting process of peer review and when you are ready, try out reputable international and local journals.",
+			"Engage scholars and critics on topics that hold your interest."
+		],
+		"graphic": "/assets/featured/liblearn.png",
+		"tools": [
+			{
+				"name": "Jamstack",
+				"src": "/assets/web/jamstack.svg"
+			},
+			{
+				"name": "React.js",
+				"src": "/assets/web/react.svg"
+			},
+			{
+				"name": "Firebase",
+				"src": "/assets/web/firebase.svg"
+			},
+			{
+				"name": "Adobe Illustrator",
+				"src": "/assets/uiuxgd/illustrator.svg"
+			},
+			{
+				"name": "Adobe Xd",
+				"src": "/assets/uiuxgd/xd.svg"
+			}
+		],
+		"external": {
+			"online": true,
+			"text": "Learn more and explore the features of",
+			"name": "liblearn",
+			"link": "https://liblearn-org.web.app/",
+			"pre": "and reach out for collaboration or enquiries with the form below or",
+			"socialLink": "#social",
+			"socialText": "social links"
+		}
+	},
+	{
+		"id": "biri-app",
+		"cat": "SE; UI/UX Design",
+		"title": "biri",
+		"detail": [
+			"Life in campus should not be as difficult... Use biri to find apartment, a roommate; order food delivery, laundry or print service; connect, and sell your things as you graduate.",
+			"There is so much of your usual school routine that can be automated. biri does that and a lil more so you can focus on your studies and live a memorable campus life."
+		],
+		"expanded": [
+			"biri is a startup with enormous potential for investors, business owners, and developers. Find out where you can contribute and how you can be part of it"
+		],
+		"graphic": "/assets/featured/biri_app.png",
+		"tools": [
+			{
+				"name": "Jamstack",
+				"src": "/assets/web/jamstack.svg"
+			},
+			{
+				"name": "React.js",
+				"src": "/assets/web/react.svg"
+			},
+			{
+				"name": "Next.js",
+				"src": "/assets/web/nextjs.svg"
+			},
+			{
+				"name": "Adobe Illustrator",
+				"src": "/assets/uiuxgd/illustrator.svg"
+			},
+			{
+				"name": "Adobe Xd",
+				"src": "/assets/uiuxgd/xd.svg"
+			},
+			{
+				"name": "mongoDb, research, ...",
+				"src": "/assets/svg/++.svg"
+			}
+		],
+		"external": {
+			"online": false,
+			"text": "",
+			"name": "",
+			"link": "",
+			"pre": "Reach out for collaboration or enquiries with the form below or",
+			"socialLink": "#social",
+			"socialText": "social links"
+		}
+	},
+	{
+		"id": "e_keeps",
+		"cat": "SE; UI/UX Design; BI",
+		"title": "e-keeps",
+		"detail": [
+			"Fancis is a successful business owner that would love to implement proper financial and stock management, digitize his business processes, and travel for vacations without dreading the closure of his business...",
+			"e-keeps records everything in your shop, every business expense, every sale and the salesperson, and also provides online shopping channel to increase sales."
+		],
+		"expanded": [
+			"If you've ever thought your salespersons are the real owners of your business, you can regain control with e-keeps. Do not become Mr Okeke that tells whoever cares to listen of the good old days when he was doing great."
+		],
+		"graphic": "/assets/featured/e-keeps.png",
+		"tools": [
+			{
+				"name": "Jamstack",
+				"src": "/assets/web/jamstack.svg"
+			},
+			{
+				"name": "React.js",
+				"src": "/assets/web/react.svg"
+			},
+			{
+				"name": "Next.js",
+				"src": "/assets/web/nextjs.svg"
+			},
+			{
+				"name": "Adobe Illustrator",
+				"src": "/assets/uiuxgd/illustrator.svg"
+			},
+			{
+				"name": "Adobe Xd",
+				"src": "/assets/uiuxgd/xd.svg"
+			},
+			{
+				"name": "Photoshop, Figma, research, ++",
+				"src": "/assets/svg/++.svg"
+			}
+		],
+		"external": {
+			"online": false,
+			"text": "",
+			"name": "",
+			"link": "",
+			"pre": "Reach out for collaboration or enquiries with the form below or",
+			"socialLink": "#social",
+			"socialText": "social links"
+		}
+	},
+	{
+		"id": "mpu-digital-space",
+		"cat": "Web App",
+		"title": "Mpu digital space",
+		"detail": [
+			"The app features the culture and traditions of ndi Mpu in Enugu state, their festivities and attractions. It tells their stories and provides information on the population, local businesses and other relevant statistics.",
+			"It is not Facebook or WhatsApp feature-rich but it provides the community, and visitors a place to bond..."
+		],
+		"expanded": [
+			"... a project to learn and practice web development, ui/ux design and prototyping, as well as social research."
+		],
+		"graphic": "/assets/featured/mpu.jpg",
+		"tools": [
+			{
+				"name": "Jamstack",
+				"src": "/assets/web/jamstack.svg"
+			},
+			{
+				"name": "React.js",
+				"src": "/assets/web/react.svg"
+			},
+			{
+				"name": "Next.js",
+				"src": "/assets/web/nextjs.svg"
+			},
+			{
+				"name": "Adobe Illustrator",
+				"src": "/assets/uiuxgd/illustrator.svg"
+			},
+			{
+				"name": "Adobe Xd",
+				"src": "/assets/uiuxgd/xd.svg"
+			},
+			{
+				"name": "Photoshop, Figma, research, ++",
+				"src": "/assets/svg/++.svg"
+			}
+		],
+		"external": {
+			"online": false,
+			"text": "",
+			"name": "",
+			"link": "",
+			"pre": "Reach out for collaboration or enquiries with the form below or",
+			"socialLink": "#social",
+			"socialText": "social links"
+		}
+	}
+]

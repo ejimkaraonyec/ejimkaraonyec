@@ -1,0 +1,55 @@
+.modalBackdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: hsl(var(--backdrop) / 0.1);
+	display: grid;
+	place-content: center;
+	text-align: center;
+	z-index: 2;
+}
+.modal {
+	padding: var(--gap-charlie);
+	background-color: var(--background-accent);
+	border-radius: var(--border-rad);
+	position: relative;
+}
+.modal button {
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: var(--bx-sh-light-accent);
+	top: var(--gap-foxtrot);
+	left: var(--gap-foxtrot);
+}
+.inquiryForm {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-delta);
+	background-color: var(--background-accent);
+	padding: var(--gap-charlie);
+}
+.inline {
+	flex-wrap: wrap;
+	gap: var(--gap-delta);
+}
+.input {
+	flex: 1 1 25rem;
+}
+.input,
+.textarea {
+	background-color: var(--accent);
+}
+.btn {
+	gap: var(--gap-foxtrot);
+	align-self: center;
+}
+.btn svg {
+	color: var(--brand);
+	height: 1.6rem;
+}
+.error {
+	border: 0.02rem solid var(--brand);
+	/* color: var(--brand); */
+}

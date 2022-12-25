@@ -1,0 +1,158 @@
+[
+	{
+		"id": "acad-research",
+		"logo": "/assets/academics/researchCard.svg",
+		"title": "Academics / Research",
+		"quals": "(BA Eng & Lit studies, PGD Pol sci, MSc IR & Diplomacy)",
+		"qualification": "BA English & Literary studies, PGD Political Science, MSc Political Science (International Relations & Diplomacy)",
+		"institution": "University of Nigeria Nsukka",
+		"detail": "I'm not crazy about it but I am good with pen (keyboard) and research tools. I have publications and ongoing studies in public health, population, ageing, peace & conflict, power dynamics & alliances, trade relations … ",
+		"tools": [
+			{
+				"name": "NVivo",
+				"src": "/assets/academics/nvivo.svg"
+			},
+			{
+				"name": "SPSS",
+				"src": "/assets/academics/spss.svg"
+			}
+		],
+		"external": {
+			"online": true,
+			"text": "Read some of my publications on",
+			"name": "Google Scholar",
+			"link": "https://scholar.google.com/citations?hl=en&user=b6OGHAgAAAAJ",
+			"pre": "and contact me for collaboration with the form below or",
+			"socialLink": "#social",
+			"socialText": "social links"
+		}
+	},
+	{
+		"id": "software-eng-devops",
+		"logo": "/assets/web/webtechCard.svg",
+		"title": "Software Engineering & DevOps",
+		"quals": "(ALX Sofware Engineering (in view); MOOCs)",
+		"qualification": "ALX Sofware Engineering; Massive Open Online Courses (MOOCs)",
+		"institution": "Holberton School; Udemy",
+		"detail": "I love to build, code. I have learnt and worked with different tools to create beautiful web experiences. HTML/CSS and JavaScript were pretty cool but I am quite fascinated by Jamstack, React.js, Next.js and Firebase.",
+		"tools": [
+			{
+				"name": "Git",
+				"src": "/assets/web/git.svg"
+			},
+			{
+				"name": "Bourne-Again Shell",
+				"src": "/assets/web/bash.svg"
+			},
+			{
+				"name": "C",
+				"src": "/assets/web/c.svg"
+			},
+			{
+				"name": "Python",
+				"src": "/assets/web/python.svg"
+			},
+			{
+				"name": "Jamstack",
+				"src": "/assets/web/jamstack.svg"
+			},
+			{
+				"name": "Next.js",
+				"src": "/assets/web/nextjs.svg"
+			},
+			{
+				"name": "Firebase",
+				"src": "/assets/web/firebase.svg"
+			},
+			{
+				"name": "MongoDB",
+				"src": "/assets/web/mongoDB.svg"
+			}
+		],
+		"external": {
+			"online": true,
+			"text": "See some of my current projects and activities on",
+			"name": "GitHub",
+			"link": "https://github.com/ejimkaraonyec/",
+			"pre": "and contact me for collaboration or enquiries with the form below or",
+			"socialLink": "#social",
+			"socialText": "social links"
+		}
+	},
+	{
+		"id": "ui-ux-graphics",
+		"logo": "/assets/uiuxgd/uiuxCard.svg",
+		"title": "UI/UX & Graphic Design",
+		"quals": "(You'd be surprised how much you can learn through  YouTube and MOOCs)",
+		"qualification": "Massive Open Online Courses (MOOCs)",
+		"institution": "Udemy; YouTube",
+		"detail": "The quest for grand user experience and quality vector graphics has led me to discover, learn and build awesome designs and experiences with Adobe Photoshop, and Adobe Illustrator, Adobe Xd, and Figma.",
+		"tools": [
+			{
+				"name": "Adobe Photoshop",
+				"src": "/assets/uiuxgd/photoshop.svg"
+			},
+			{
+				"name": "Adobe Illustrator",
+				"src": "/assets/uiuxgd/illustrator.svg"
+			},
+			{
+				"name": "Figma",
+				"src": "/assets/uiuxgd/figma.svg"
+			},
+			{
+				"name": "Adobe XD",
+				"src": "/assets/uiuxgd/xd.svg"
+			}
+		],
+		"external": {
+			"online": false,
+			"text": "",
+			"name": "",
+			"link": "",
+			"pre": "Contact me for collaboration or enquiries with the form below or",
+			"socialLink": "#social",
+			"socialText": "social links"
+		}
+	},
+	{
+		"id": "analytics-pubs",
+		"logo": "/assets/biad/analyticsCard.svg",
+		"title": "Business I/A & Digital Pub",
+		"quals": "(Kinda different areas right? MOOCs to the rescue again)",
+		"qualification": "Massive Open Online Courses (MOOCs)",
+		"institution": "Udemy; YouTube",
+		"detail": "Building dashboards and running analyses with NumPy, Pandas, Excel, Matplotlib, Tableau, and MySQL Workbench are every bit as fulfilling as designing that perfect digital publication with Adobe InDesign",
+		"tools": [
+			{
+				"name": "Adobe InCopy",
+				"src": "/assets/biad/incopy.svg"
+			},
+			{
+				"name": "Adobe InDesign",
+				"src": "/assets/biad/indesign.svg"
+			},
+			{
+				"name": "Anaconda",
+				"src": "/assets/biad/anaconda.svg"
+			},
+			{
+				"name": "MySQL",
+				"src": "/assets/biad/mysql.svg"
+			},
+			{
+				"name": "Tableau",
+				"src": "/assets/biad/tableau.svg"
+			}
+		],
+		"external": {
+			"online": false,
+			"text": "",
+			"name": "",
+			"link": "",
+			"pre": "Contact me for collaboration or enquiries with the form below or",
+			"socialLink": "#social",
+			"socialText": "social links"
+		}
+	}
+]

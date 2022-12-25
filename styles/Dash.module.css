@@ -1,0 +1,31 @@
+.content {
+	padding-top: var(--gap-charlie);
+	gap: var(--gap-bravo);
+}
+.nav svg,
+.listem svg {
+	height: 18px;
+}
+
+.nav {
+	background-color: var(--background-accent);
+	gap: var(--gap-bravo);
+	justify-content: center;
+	padding: var(--gap-charlie) var(--gap-echo);
+	border-radius: var(--border-rad);
+}
+.navBtn {
+	gap: var(--gap-echo);
+}
+
+.listem {
+	gap: var(--gap-bravo);
+}
+.listemBtn {
+	flex: 1;
+	justify-content: center;
+	gap: var(--gap-echo);
+	background-color: var(--background-accent);
+	padding: var(--gap-charlie) var(--gap-echo);
+	border-radius: var(--border-rad);
+}

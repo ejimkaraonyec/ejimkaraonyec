@@ -1,0 +1,186 @@
+.thoughtCards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap-bravo);
+}
+
+.thoughtCard {
+	flex: 1 0 300px;
+	border-radius: var(--border-rad);
+	background-color: var(--background-accent);
+	display: flex;
+	flex-direction: column;
+}
+.thoughtCard:nth-child(odd).thoughtAppear,
+.thoughtCard:nth-child(even).thoughtAppear {
+	/* transition: all 100ms cubic-bezier(0, 1.6, 0.69, 0.69); */
+	transition: all 100ms ease-in;
+}
+.thoughtCard:nth-child(odd).thoughtAppear:hover,
+.thoughtCard:nth-child(even).thoughtAppear:hover,
+.thoughtCard:nth-child(odd).thoughtAppear:focus-within,
+.thoughtCard:nth-child(even).thoughtAppear:focus-within {
+	transform: translateY(-0.1rem);
+}
+
+.thoughtCard:nth-child(odd).thoughtAppear:active,
+.thoughtCard:nth-child(even).thoughtAppear:active {
+	transform: translateY(0);
+}
+
+.cardImage {
+	display: flex;
+	justify-content: center;
+	max-height: 25rem;
+	border-top-left-radius: var(--border-rad);
+	border-top-right-radius: var(--border-rad);
+}
+.thoughtImg {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	border-top-left-radius: var(--border-rad);
+	border-top-right-radius: var(--border-rad);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: var(--gap-charlie);
+	gap: var(--gap-echo);
+}
+
+.thoughtDate {
+	margin-top: -0.6rem;
+}
+/* .thoughtExcerpt {
+	text-align: center;
+} */
+/* /////////////////////////// Details //////////////////// */
+
+.detailContent {
+	display: -ms-grid;
+	display: grid;
+	gap: var(--gap-echo);
+}
+.header {
+	gap: var(--gap-echo);
+}
+.markdown h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	letter-spacing: 0.05rem;
+	line-height: 3.7rem;
+}
+.markdown h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	letter-spacing: 0.05rem;
+	line-height: 3.2rem;
+}
+.markdown h3 {
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: 0.04rem;
+	line-height: 2.7rem;
+}
+.markdown h4 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 0.04rem;
+	line-height: 2.5rem;
+}
+.markdown .image {
+	display: flex;
+	justify-content: center;
+	max-height: 30rem;
+}
+.markdown .image img {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+.markdown blockquote {
+	background-color: var(--accent);
+	padding: 1.8rem 1.8rem 1.8rem 3.6rem;
+	position: relative;
+}
+.markdown blockquote::after {
+	content: '';
+	background-color: var(--brand);
+	position: absolute;
+	top: 0;
+	left: 1.8rem;
+	bottom: 0;
+	right: 0;
+
+	width: 0.6rem;
+	height: calc(100% - 3.6rem);
+	margin-top: auto;
+	margin-bottom: auto;
+	border-radius: 2px;
+}
+.markdown .code {
+	background-color: hsl(var(--backdrop) / 0.6);
+	padding: 0.01rem 0.5rem 0.05rem 0.5rem;
+	border-radius: var(--border-rad);
+	margin-top: 1rem;
+	word-break: break-all;
+	white-space: pre-wrap;
+}
+.markdown > .code,
+.markdown > a {
+	display: inline-block;
+}
+.markdown > * + * {
+	margin-top: 1rem;
+}
+.markdown > a + a {
+	margin-left: 0.5rem;
+}
+/* .markdown {} */
+
+/* ????????? Animation ?????????? */
+.thoughtCard {
+	transform: translateY(50px);
+	opacity: 0;
+	transition: all 500ms ease;
+}
+
+.thoughtCard:nth-child(odd).thoughtAppear {
+	transform: translateY(0);
+	opacity: 1;
+	transition: all 800ms ease;
+}
+
+.thoughtCard:nth-child(even).thoughtAppear {
+	transform: translateY(0);
+	opacity: 1;
+	transition: all 700ms ease 300ms;
+}
+
+/* /////////////////////////// Queries //////////////////// */
+
+@media (max-width: 1150px) {
+	.thoughtCard {
+		/* flex: 1 0 330px; */
+	}
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 763px) {
+	.thoughtCard:nth-child(odd).thoughtAppear {
+		transition: all 600ms ease;
+	}
+
+	.thoughtCard:nth-child(even).thoughtAppear {
+		transition: all 600ms ease;
+	}
+}
+
+@media (max-width: 350px) {
+	.thoughtCard {
+		flex: 1 0 250px;
+	}
+}
