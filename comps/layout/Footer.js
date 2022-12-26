@@ -62,7 +62,7 @@ const Footer = () => {
 						</a> */}
 					<a
 						title="whatsapp social handle"
-						href="https://wa.me/+2348032895696"
+						href="https://wa.me/+2348032595696"
 						target="_blank"
 						rel="noreferrer"
 					>
