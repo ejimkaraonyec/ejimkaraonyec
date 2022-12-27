@@ -88,7 +88,7 @@ const Footer = () => {
 					</a>
 					<a
 						title="call on mobile"
-						href="tel:+23480356956"
+						href="tel:+2348032595696"
 						target="_blank"
 						rel="noreferrer"
 					>
