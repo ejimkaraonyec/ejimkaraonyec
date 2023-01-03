@@ -22,7 +22,7 @@ export default function Skills({ skills }) {
 				/>
 			</Head>
 			<main className="centered">
-				<h2 className="ht3 title brand">Skills</h2>
+				<h2 className="ht2 title brand">Skills</h2>
 				<div className={styles.skillCards}>
 					{skills.map((skill) => (
 						<SkillCard skill={skill} key={skill.id} />

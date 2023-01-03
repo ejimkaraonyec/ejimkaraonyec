@@ -22,7 +22,7 @@ export default function Projects({ projects }) {
 				/>
 			</Head>
 			<main className="centered">
-				<h2 className="ht3 title brand">Projects</h2>
+				<h2 className="ht2 title brand">Projects</h2>
 				<div className={styles.projectCards}>
 					{projects.map((project) => (
 						<ProjectCard project={project} key={project.id} />

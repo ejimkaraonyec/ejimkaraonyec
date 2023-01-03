@@ -10,7 +10,7 @@ export default function Header() {
 			<Link href="/" className="flex">
 				<LogoIcon />
 			</Link>
-			<nav className="nav ht6">
+			<nav className="nav">
 				{home && (
 					<>
 						<a href="#skills">Skills</a>

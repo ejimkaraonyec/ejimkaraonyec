@@ -23,7 +23,7 @@ export default function Thoughts({ thoughts }) {
 			</Head>
 			<main className="centered">
 				<section className={`content ${styles.featured}`}>
-					<h2 className="ht3 brand title">Featured</h2>
+					<h2 className="ht2 brand title">Featured</h2>
 					<section className={styles.thoughtCards}>
 						{thoughts.map((thought) => (
 							<ThoughtCard thought={thought} key={thought.slug} />

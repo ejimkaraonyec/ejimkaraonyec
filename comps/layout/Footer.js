@@ -106,18 +106,7 @@ const Footer = () => {
 				<Link title="ejimkaraonyec" href="/" className="footer-link">
 					ejimkaraonyec
 				</Link>
-				<span>. All rights reserved.</span>
-				{/* <p className="builtby">
-						<a
-							title="ntelitix.io"
-							href="https://ejimkaraonyec.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="footer-link"
-						>
-							ntelitix.io
-						</a>
-					</p> */}
+				<span> | All rights reserved</span>
 			</div>
 		</footer>
 	);

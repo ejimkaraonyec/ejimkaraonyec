@@ -52,7 +52,7 @@
 
 .skillItalic {
 	font-style: italic;
-	color: var(--title);
+	color: var(--foreground-accent);
 }
 
 .skillDetails {
@@ -62,7 +62,7 @@
 
 .skillTools {
 	display: flex;
-	gap: var(--gap-charlie);
+	gap: var(--gap-delta);
 }
 
 /* ????????? Animation ?????????? */

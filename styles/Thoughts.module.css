@@ -58,28 +58,28 @@
 .detailContent {
 	display: -ms-grid;
 	display: grid;
-	gap: var(--gap-echo);
+	gap: var(--gap-delta);
 }
 .header {
 	gap: var(--gap-echo);
 }
 .markdown h1 {
 	font-size: 3rem;
-	font-weight: 900;
-	letter-spacing: 0.05rem;
-	line-height: 3.7rem;
+	font-weight: 800;
+	letter-spacing: 0.1rem;
+	line-height: 3.9rem;
 }
 .markdown h2 {
-	font-size: 2.5rem;
-	font-weight: 900;
-	letter-spacing: 0.05rem;
+	font-size: 2.4rem;
+	font-weight: 800;
+	letter-spacing: 0.08rem;
 	line-height: 3.2rem;
 }
 .markdown h3 {
 	font-size: 2rem;
-	font-weight: 800;
-	letter-spacing: 0.04rem;
-	line-height: 2.7rem;
+	font-weight: 600;
+	letter-spacing: 0.05rem;
+	line-height: 3rem;
 }
 .markdown h4 {
 	font-size: 1.8rem;
@@ -129,7 +129,7 @@
 	display: inline-block;
 }
 .markdown > * + * {
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 }
 .markdown > a + a {
 	margin-left: 0.5rem;

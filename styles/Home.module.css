@@ -2,24 +2,18 @@
 	overflow: hidden;
 	position: relative;
 }
-
+.heroIntro,
+.heroContact {
+	line-height: normal;
+}
 .hero .title {
 	color: var(--foreground-accent);
-	font-size: 5rem;
-	font-weight: 900;
-	letter-spacing: 0.1rem;
-	line-height: 6rem;
-	margin-left: -0.25rem;
+	line-height: normal;
 }
 
 .hero .text {
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	gap: var(--gap-echo);
-	min-height: 40rem;
-	position: inherit;
 	z-index: 0;
 }
 .hero .style {
@@ -30,23 +24,12 @@
 	right: 0;
 	bottom: 0;
 }
-.hero .textP,
-.heroContact {
-	font-size: 3rem;
-	font-weight: 900;
-	letter-spacing: 0.05rem;
-	line-height: 3.7rem;
-}
 .hero .textP {
-	max-width: 35ch;
-}
-
-.heroContact {
-	margin-top: 0.5rem;
-	color: var(--foreground-accent);
+	max-width: 51.2ch;
+	font-size: 2.2rem;
+	font-weight: 600;
 }
 .hero .style svg {
-	height: 40rem;
 	border-bottom-left-radius: 40%;
 	border-bottom-right-radius: 50%;
 }
@@ -57,63 +40,121 @@
 }
 
 @media (max-width: 1024px) {
-	.hero .title {
-		font-size: 4rem;
-		letter-spacing: 0.08rem;
-		line-height: 5rem;
-	}
-	.hero .textP,
-	.heroContact {
-		font-size: 2.5rem;
-		line-height: 3.2rem;
-	}
-
-	.hero .text {
-		min-height: 30rem;
-	}
 	.hero .style svg {
-		height: 30rem;
 		opacity: 0.3;
 	}
 }
 
-@media (max-width: 520px) {
-	.hero .title {
-		font-size: 3.2rem;
-		line-height: 4rem;
+@media (max-width: 801px) {
+	.heroIntro {
+		font-size: 3.6rem;
 	}
-	.hero .textP {
-		font-weight: 800;
+	.hero .title {
+		font-size: 4.6rem;
 	}
 	.hero .style svg {
 		opacity: 0.2;
 	}
-	.hero .textP,
-	.heroContact {
-		font-size: 2.2rem;
-		letter-spacing: 0.04rem;
-		line-height: 3rem;
+}
+@media (max-width: 739px) {
+	.heroIntro {
+		font-size: 3.6rem;
 	}
-	.heroContact {
-		margin-top: -0.1rem;
+	.hero .title {
+		font-size: 4.4rem;
+	}
+	.hero .textP {
+		max-width: 45ch;
 	}
 }
-@media (max-width: 419px) {
-	.hero .title {
+@media (max-width: 709px) {
+	.heroIntro {
 		font-size: 3rem;
-		letter-spacing: 0.05rem;
-		line-height: 3.7rem;
+	}
+	.hero .title {
+		font-size: 4rem;
+	}
+}
+@media (max-width: 611px) {
+	.heroIntro {
+		font-size: 2.8rem;
 		margin-left: 0;
 	}
-	.hero .textP,
-	.heroContact {
-		font-size: 2rem;
-		line-height: 2.7rem;
+	.hero .title {
+		font-size: 3.8rem;
+		margin-left: 0;
+	}
+	.hero .textP {
+		max-width: 43ch;
 	}
 }
-@media (max-width: 389px) {
+@media (max-width: 582px) {
+	.heroIntro {
+		font-size: 2.6rem;
+	}
+	.hero .title {
+		font-size: 3.6rem;
+	}
+	.hero .textP {
+		max-width: 42ch;
+	}
+}
+@media (max-width: 553px) {
+	.hero .title {
+		letter-spacing: 0.12rem;
+	}
+}
+@media (max-width: 515px) {
+	.hero .title {
+		font-size: 3.5rem;
+	}
+	.hero .textP {
+		max-width: 36ch;
+	}
+}
+@media (max-width: 499px) {
+	.hero .title {
+		font-size: 3.2rem;
+	}
+}
+@media (max-width: 458px) {
+	.heroIntro {
+		font-size: 2.5rem;
+	}
+	.hero .title {
+		font-size: 3rem;
+	}
+}
+@media (max-width: 402px) {
+	.heroIntro {
+		font-size: 3rem;
+	}
+	.hero .title {
+		font-size: 5rem;
+	}
+	.hero .big_s {
+		display: none;
+	}
+	.hero .small_s::after {
+		content: 'Ejimkaraonye, C';
+	}
+}
+@media (max-width: 356px) {
 	.hero .style svg {
-		height: 14rem;
 		opacity: 0.1;
+	}
+	.heroIntro {
+		font-size: 2.8rem;
+	}
+	.hero .title {
+		font-size: 4.5rem;
+	}
+}
+@media (max-width: 321px) {
+	.heroIntro {
+		font-size: 2.5rem;
+	}
+	.hero .title {
+		font-size: 4.2rem;
 	}
 }

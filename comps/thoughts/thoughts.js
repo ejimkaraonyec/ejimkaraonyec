@@ -35,7 +35,7 @@ export function ThoughtCard({ thought }) {
 				/>
 			</div>
 			<div className={styles.content}>
-				<h2 className={`ht4 brand ${styles.thoughtTitle}`}>{title}</h2>
+				<h2 className={`ht3 brand ${styles.thoughtTitle}`}>{title}</h2>
 				{thought.updateDate && (
 					<time className={`ht5 italic ${styles.thoughtDate}`}>
 						{formatedDate(updateDate)}

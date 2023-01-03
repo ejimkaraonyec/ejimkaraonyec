@@ -21,8 +21,10 @@ export function ProjectCard({ project }) {
 					ref={ref}
 				>
 					<div className={styles.projectContent}>
-						<h2 className={`ht5 brand ${styles.cat}`}>{project.cat}</h2>
-						<p className={`ht3 ${styles.ttitle}`}>{project.title}</p>
+						<div className="flex-col gap-f">
+							<h2 className={`ht5 brand ${styles.cat}`}>{project.cat}</h2>
+							<p className={`ht3 accent ${styles.ttitle}`}>{project.title}</p>
+						</div>
 						<div className={styles.projectBox}>
 							<p>{project.detail[0]}</p>
 						</div>

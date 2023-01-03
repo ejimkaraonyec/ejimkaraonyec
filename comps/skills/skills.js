@@ -26,12 +26,14 @@ export function SkillCard({ skill }) {
 						style={{ width: 'auto', height: 'auto' }}
 						className={styles.skillImg}
 					/>
-					<h2 className={`ht3 brand just-right ${styles.skillTitle}`}>
-						{skill.title}
-					</h2>
-					<p className={`ht5 italic just-right ${styles.skillItalic}`}>
-						{skill.quals}
-					</p>
+					<div className="flex-col gap-f">
+						<h2 className={`ht3 brand just-right ${styles.skillTitle}`}>
+							{skill.title}
+						</h2>
+						<p className={`ht5 just-right ${styles.skillItalic}`}>
+							{skill.quals}
+						</p>
+					</div>
 					<p className={styles.skillDetails}>{skill.detail}</p>
 					<div className={styles.skillTools}>
 						{skill.tools.map((tool, index) => (

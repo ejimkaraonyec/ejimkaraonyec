@@ -11,7 +11,7 @@
 			"Experience the joy of making publications without the strict vetting process of peer review and when you are ready, try out reputable international and local journals.",
 			"Engage scholars and critics on topics that hold your interest."
 		],
-		"graphic": "/assets/featured/liblearn.png",
+		"graphic": "/assets/featured/liblearn/liblearn.png",
 		"tools": [
 			{
 				"name": "Jamstack",
@@ -42,7 +42,33 @@
 			"pre": "and reach out for collaboration or enquiries with the form below or",
 			"socialLink": "#social",
 			"socialText": "social links"
-		}
+		},
+		"slides": [
+			{
+				"id": 1,
+				"src": "/assets/featured/liblearn/liblearn.png",
+				"title": "liblearn",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 2,
+				"src": "/assets/featured/biri/biri_app.png",
+				"title": "liblearn second title",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 3,
+				"src": "/assets/featured/e-keeps/e-keeps.png",
+				"title": "liblearn third title",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 4,
+				"src": "/assets/featured/mpu/mpu.jpg",
+				"title": "liblearn fourth title",
+				"text": "Lorem ipsum and some more"
+			}
+		]
 	},
 	{
 		"id": "biri-app",
@@ -55,7 +81,7 @@
 		"expanded": [
 			"biri is a startup with enormous potential for investors, business owners, and developers. Find out where you can contribute and how you can be part of it"
 		],
-		"graphic": "/assets/featured/biri_app.png",
+		"graphic": "/assets/featured/biri/biri_app.png",
 		"tools": [
 			{
 				"name": "Jamstack",
@@ -79,7 +105,7 @@
 			},
 			{
 				"name": "mongoDb, research, ...",
-				"src": "/assets/svg/++.svg"
+				"src": "/assets/svg/more.svg"
 			}
 		],
 		"external": {
@@ -90,7 +116,33 @@
 			"pre": "Reach out for collaboration or enquiries with the form below or",
 			"socialLink": "#social",
 			"socialText": "social links"
-		}
+		},
+		"slides": [
+			{
+				"id": 1,
+				"src": "/assets/featured/biri/biri_app.png",
+				"title": "biri",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 2,
+				"src": "/assets/featured/e-keeps/e-keeps.png",
+				"title": "biri second title",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 3,
+				"src": "/assets/featured/liblearn/liblearn.png",
+				"title": "biri third title",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 4,
+				"src": "/assets/featured/mpu/mpu.jpg",
+				"title": "biri fourth title",
+				"text": "Lorem ipsum and some more"
+			}
+		]
 	},
 	{
 		"id": "e_keeps",
@@ -103,7 +155,7 @@
 		"expanded": [
 			"If you've ever thought your salespersons are the real owners of your business, you can regain control with e-keeps. Do not become Mr Okeke that tells whoever cares to listen of the good old days when he was doing great."
 		],
-		"graphic": "/assets/featured/e-keeps.png",
+		"graphic": "/assets/featured/e-keeps/e-keeps.png",
 		"tools": [
 			{
 				"name": "Jamstack",
@@ -127,7 +179,7 @@
 			},
 			{
 				"name": "Photoshop, Figma, research, ++",
-				"src": "/assets/svg/++.svg"
+				"src": "/assets/svg/more.svg"
 			}
 		],
 		"external": {
@@ -138,7 +190,33 @@
 			"pre": "Reach out for collaboration or enquiries with the form below or",
 			"socialLink": "#social",
 			"socialText": "social links"
-		}
+		},
+		"slides": [
+			{
+				"id": 1,
+				"src": "/assets/featured/e-keeps/e-keeps.png",
+				"title": "e-keeps",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 2,
+				"src": "/assets/featured/biri/biri_app.png",
+				"title": "e-keeps second title",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 3,
+				"src": "/assets/featured/liblearn/liblearn.png",
+				"title": "e-keeps third title",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 4,
+				"src": "/assets/featured/mpu/mpu.jpg",
+				"title": "e-keeps fourth title",
+				"text": "Lorem ipsum and some more"
+			}
+		]
 	},
 	{
 		"id": "mpu-digital-space",
@@ -151,7 +229,7 @@
 		"expanded": [
 			"... a project to learn and practice web development, ui/ux design and prototyping, as well as social research."
 		],
-		"graphic": "/assets/featured/mpu.jpg",
+		"graphic": "/assets/featured/mpu/mpu.jpg",
 		"tools": [
 			{
 				"name": "Jamstack",
@@ -175,7 +253,7 @@
 			},
 			{
 				"name": "Photoshop, Figma, research, ++",
-				"src": "/assets/svg/++.svg"
+				"src": "/assets/svg/more.svg"
 			}
 		],
 		"external": {
@@ -186,6 +264,32 @@
 			"pre": "Reach out for collaboration or enquiries with the form below or",
 			"socialLink": "#social",
 			"socialText": "social links"
-		}
+		},
+		"slides": [
+			{
+				"id": 1,
+				"src": "/assets/featured/mpu/mpu.jpg",
+				"title": "Mpu app",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 2,
+				"src": "/assets/featured/biri/biri_app.png",
+				"title": "Mpu app second title",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 3,
+				"src": "/assets/featured/liblearn/liblearn.png",
+				"title": "Mpu app third title",
+				"text": "Lorem ipsum and some more"
+			},
+			{
+				"id": 4,
+				"src": "/assets/featured/e-keeps/e-keeps.png",
+				"title": "Mpu app fourth title",
+				"text": "Lorem ipsum and some more"
+			}
+		]
 	}
 ]
