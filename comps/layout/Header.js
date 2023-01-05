@@ -25,7 +25,7 @@ export default function Header() {
 				)}
 				<Link href="/thoughts">Thoughts</Link>
 				<a
-					href="/assets/doc/ejimkaraonye_c_curriculum_vitae.docx"
+					href="/assets/doc/ejimkaraonye_c_curriculum_vitae.pdf"
 					download="Ejimkaraonye Chukwuemeka CV"
 					className="download"
 				>
