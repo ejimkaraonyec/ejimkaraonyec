@@ -130,7 +130,7 @@ input[type='reset'] {
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 
-@media (prefers-reduced-motion: reduce) {
+@media only screen and (prefers-reduced-motion: reduce) {
 	html:focus-within {
 		scroll-behavior: auto;
 	}
@@ -299,7 +299,7 @@ input[type='reset'] {
 .btn-inline:focus-within svg {
 	color: var(--foreground);
 }
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 	.inline-snap {
 		overflow-x: auto;
 		overscroll-behavior-inline: contain;
@@ -584,7 +584,7 @@ footer :target .social-links {
 	display: flex;
 	justify-content: center;
 	border-radius: var(--border-rad);
-	max-height: 60rem;
+	max-height: 58.5rem;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -613,44 +613,45 @@ footer :target .social-links {
 }
 
 .slider .s_content {
-	background-color: hsl(var(--backdrop) / 0.8);
-	border-top-right-radius: var(--border-rad);
-
+	background-color: hsl(var(--backdrop) / 0.9);
+	border-top-left-radius: var(--border-rad);
 	position: absolute;
-	z-index: 2;
 	bottom: 0;
-	left: -500px;
+	right: -500px;
 	opacity: 0;
-	padding: var(--gap-echo) var(--gap-delta);
+	padding: var(--gap-delta) var(--gap-delta);
 }
 
 .slider .s_content .ht4 {
 	margin-bottom: 0.5rem;
+	color: var(--foreground-accent);
 }
 
 .slider .slide.activeSlide .s_content {
 	opacity: 1;
-	transform: translateX(500px);
+	transform: translateX(-500px);
 	transition: all 0.7s ease-in-out 0.3s;
 }
 
 .slider .btn-a {
+	font-size: 5rem;
+	font-weight: 900;
+	line-height: 4rem;
+	background-color: hsl(var(--backdrop) / 0.7);
+	border: 1px solid var(--foreground);
+	border-radius: 50%;
+	height: 6rem;
+	width: 6rem;
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	font-size: 3rem;
-	color: var(--brand);
-	border: 2px solid var(--brand);
-	border-radius: 50%;
-	height: 4rem;
-	width: 4rem;
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
 .slider .btn-a:hover {
-	color: var(--background);
-	border: 2px solid var(--background);
+	color: var(--foreground-accent);
+	background-color: hsl(var(--backdrop) / 0.5);
 }
 
 .slider .btn-a#prev-a {
@@ -661,7 +662,7 @@ footer :target .social-links {
 	right: 2.5rem;
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 	.slider .s_content {
 		bottom: -100px;
 		left: 0;
@@ -675,12 +676,12 @@ footer :target .social-links {
 }
 
 /* /////////////////////////// Queries //////////////////// */
-@media (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
 	html {
 		font-size: 56.25%;
 	}
 }
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 	html {
 		font-size: 53.125%;
 	}
@@ -689,7 +690,7 @@ footer :target .social-links {
 	}
 }
 
-@media (max-width: 650px) {
+@media only screen and (max-width: 650px) {
 	html {
 		font-size: 50%;
 	}
@@ -702,12 +703,12 @@ footer :target .social-links {
 		letter-spacing: 0.2rem;
 	}
 }
-@media (max-width: 550px) {
+@media only screen and (max-width: 550px) {
 	html {
 		font-size: 46.875%;
 	}
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 	html {
 		font-size: 43.75%;
 	}
@@ -715,12 +716,12 @@ footer :target .social-links {
 		gap: var(--gap-delta);
 	}
 }
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
 	header.header .nav {
 		gap: var(--gap-echo);
 	}
 }
-@media (max-width: 330px) {
+@media only screen and (max-width: 330px) {
 	header.header .nav {
 		gap: var(--gap-echo);
 		font-size: 1.8rem;

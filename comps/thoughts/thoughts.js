@@ -23,7 +23,7 @@ export function ThoughtCard({ thought }) {
 			className={`${styles.thoughtCard} ${inView ? styles.thoughtAppear : ''}`}
 			ref={ref}
 		>
-			<div className={styles.cardImage}>
+			<figure className={styles.cardImage}>
 				<Image
 					src={`/thoughts/${slug}/${image}`}
 					width={500}
@@ -33,7 +33,7 @@ export function ThoughtCard({ thought }) {
 					className={styles.thoughtImg}
 					// layout="responsive"
 				/>
-			</div>
+			</figure>
 			<div className={styles.content}>
 				<h2 className={`ht3 brand ${styles.thoughtTitle}`}>{title}</h2>
 				{thought.updateDate && (
@@ -59,14 +59,14 @@ export function ThoughtDetail({ thought }) {
 			if (node.children[0].tagName === 'img') {
 				const image = node.children[0];
 				return (
-					<div className={styles.image}>
+					<figure className={styles.image}>
 						<Image
 							src={`/thoughts/${slug}/${image.properties.src}`}
 							alt={image.properties.alt}
 							width={600}
 							height={250}
 						/>
-					</div>
+					</figure>
 				);
 			}
 
@@ -95,16 +95,18 @@ export function ThoughtDetail({ thought }) {
 			const match = /language-(\w+)/.exec(className || '');
 			return !inline && match ? (
 				<SyntaxHighlighter
-					lineProps={{
-						style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' },
+					customStyle={{
+						borderRadius: '0.4rem',
+						backgroundColor: 'hsl(212 97% 12%)',
 					}}
-					wrapLines={true}
-					children={String(children).replace(/\n$/, '')}
+					// children={String(children).replace(/\n$/, '')}
 					style={nightOwl}
 					language={match[1]}
 					PreTag="div"
 					{...props}
-				/>
+				>
+					{String(children).replace(/\n$/, '')}
+				</SyntaxHighlighter>
 			) : (
 				<code className={styles.code} {...props}>
 					{children}

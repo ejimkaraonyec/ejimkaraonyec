@@ -45,23 +45,23 @@ export const Slider = ({ slides }) => {
 					<div
 						className={`slide ${slide}`}
 						key={id}
-						style={{
-							backgroundImage: `url(${src})`,
-							backgroundRepeat: 'no-repeat',
-							backgroundSize: 'cover',
-						}}
+						// style={{
+						// 	backgroundImage: `url(${src})`,
+						// 	backgroundRepeat: 'no-repeat',
+						// 	backgroundSize: 'cover',
+						// }}
 					>
-						{/* <Image
+						<Image
 							src={src}
-							width={1200}
-							height={600}
+							width={1040}
+							height={585}
 							alt={title}
 							style={{ width: '100%' }}
 							className="slideImg"
 							// layout="responsive"
-						/> */}
+						/>
 						<div className="s_content">
-							<h3 className="ht4 brand">{title}</h3>
+							<h3 className="ht4">{title}</h3>
 							<p>{text}</p>
 						</div>
 					</div>

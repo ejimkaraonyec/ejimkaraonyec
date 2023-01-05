@@ -32,6 +32,7 @@
 .hero .style svg {
 	border-bottom-left-radius: 40%;
 	border-bottom-right-radius: 50%;
+	width: 100%;
 }
 
 .morePs {

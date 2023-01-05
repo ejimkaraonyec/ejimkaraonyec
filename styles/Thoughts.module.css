@@ -97,9 +97,10 @@
 	object-fit: cover;
 }
 .markdown blockquote {
-	background-color: var(--accent);
+	background-color: var(--background-accent);
 	padding: 1.8rem 1.8rem 1.8rem 3.6rem;
 	position: relative;
+	border-radius: var(--border-rad);
 }
 .markdown blockquote::after {
 	content: '';
@@ -117,7 +118,7 @@
 	border-radius: 2px;
 }
 .markdown .code {
-	background-color: var(--accent);
+	background-color: var(--background-accent);
 	padding: 0.01rem 0.5rem 0.35rem 0.5rem;
 	border-radius: var(--border-rad);
 	margin-top: 1rem;
@@ -155,10 +156,10 @@
 }
 
 /* /////////////////////////// Queries //////////////////// */
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
 }
 
-@media (max-width: 763px) {
+@media only screen and (max-width: 763px) {
 	.thoughtCard:nth-child(odd).thoughtAppear {
 		transition: all 600ms ease;
 	}
@@ -166,9 +167,12 @@
 	.thoughtCard:nth-child(even).thoughtAppear {
 		transition: all 600ms ease;
 	}
+	.markdown pre {
+		width: min(90vw, 763px);
+	}
 }
 
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
 	.thoughtCard {
 		flex: 1 0 250px;
 	}

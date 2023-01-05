@@ -48,14 +48,14 @@ export function ProjectCard({ project }) {
 							))}
 						</div>
 					</div>
-					<div className={styles.projectStyle}>
+					<figure className={styles.projectStyle}>
 						<Image
 							src={project.graphic}
 							width={1000}
 							height={500}
 							alt={project.id}
 						/>
-					</div>
+					</figure>
 				</Link>
 			)}
 		</>

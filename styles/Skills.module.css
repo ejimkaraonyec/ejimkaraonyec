@@ -91,16 +91,16 @@
 }
 /* /////////////////////////// Queries //////////////////// */
 
-@media (max-width: 1150px) {
+@media only screen and (max-width: 1150px) {
 	.skillCard {
 		flex: 1 0 330px;
 	}
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
 }
 
-@media (max-width: 763px) {
+@media only screen and (max-width: 763px) {
 	.skillCard:nth-child(odd).skillAppear {
 		transition: all 600ms ease;
 	}
@@ -110,7 +110,7 @@
 	}
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 	.skillCard {
 		flex: 1 0 254px;
 	}
