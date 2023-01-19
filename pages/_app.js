@@ -1,7 +1,10 @@
+import { Montserrat } from '@next/font/google';
 import Head from 'next/head';
 import Layout from '../comps/layout/Layout';
 import { StateProvider } from '../context/StateContext';
 import '../styles/globals.css';
+
+export const montserrat = Montserrat({ subsets: ['latin'] });
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -20,7 +23,9 @@ function MyApp({ Component, pageProps }) {
 					<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 					<link rel="icon" type="image/png" href="/favicon.png" />
 				</Head>
-				<Component {...pageProps} />
+				<main className={`centered ${montserrat.className}`}>
+					<Component {...pageProps} />
+				</main>
 			</Layout>
 		</StateProvider>
 	);

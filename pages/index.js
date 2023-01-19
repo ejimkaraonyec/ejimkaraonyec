@@ -27,8 +27,7 @@ export default function Home({ projects, skills }) {
 	}, [dispatch]);
 
 	return (
-		<main className="centered">
-			{/* <div className={styles.content}> */}
+		<>
 			<Hero />
 			<section className={`content ${styles.skills}`} id="skills">
 				<h2 className={`ht2 brand title just-center ${styles.heading}`}>
@@ -58,11 +57,10 @@ export default function Home({ projects, skills }) {
 				</div>
 				{projects.length > 4 && (
 					<Link href="/projects" className={`ht5 btn-inline ${styles.morePs}`}>
-						see more
+						see all featured
 					</Link>
 				)}
 			</section>
-			{/* </div> */}
-		</main>
+		</>
 	);
 }

@@ -11,6 +11,36 @@ import styles from '../../styles/Thoughts.module.css';
 SyntaxHighlighter.registerLanguage('js', js);
 SyntaxHighlighter.registerLanguage('css', css);
 
+export const NotFeatured = ({ thoughts }) => {
+	return (
+		<section className={styles.notFeatured}>
+			{thoughts.length > 0 &&
+				thoughts.map((thought) => {
+					const { title, excerpt, date, slug } = thought;
+					return (
+						<Link
+							href={`/thoughts/${slug}`}
+							key={thought.slug}
+							className={styles.thoughtItem}
+						>
+							<h2 className={`ht3 brand ${styles.thoughtTitle}`}>{title}</h2>
+							{thought.updateDate && (
+								<time className={`ht5 italic ${styles.thoughtDate}`}>
+									{formatedDate(thought.updateDate)}
+								</time>
+							)}
+							{!thought.updateDate && (
+								<time className={`ht5 italic ${styles.thoughtDate}`}>
+									{formatedDate(date)}
+								</time>
+							)}
+							<p className={styles.thoughtExcerpt}>{excerpt}</p>
+						</Link>
+					);
+				})}
+		</section>
+	);
+};
 export function ThoughtCard({ thought }) {
 	const { title, image, excerpt, date, slug } = thought;
 	const { ref, inView } = useInView({
@@ -26,19 +56,17 @@ export function ThoughtCard({ thought }) {
 			<figure className={styles.cardImage}>
 				<Image
 					src={`/thoughts/${slug}/${image}`}
-					width={500}
-					height={200}
+					fill
+					sizes="50vw"
 					alt={title}
-					style={{ width: '100%' }}
 					className={styles.thoughtImg}
-					// layout="responsive"
 				/>
 			</figure>
 			<div className={styles.content}>
 				<h2 className={`ht3 brand ${styles.thoughtTitle}`}>{title}</h2>
 				{thought.updateDate && (
 					<time className={`ht5 italic ${styles.thoughtDate}`}>
-						{formatedDate(updateDate)}
+						{formatedDate(thought.updateDate)}
 					</time>
 				)}
 				{!thought.updateDate && (
@@ -63,14 +91,15 @@ export function ThoughtDetail({ thought }) {
 						<Image
 							src={`/thoughts/${slug}/${image.properties.src}`}
 							alt={image.properties.alt}
-							width={600}
-							height={250}
+							fill
+							sizes="100vw"
 						/>
 					</figure>
 				);
 			}
 
-			if (node.children[0].tagName === 'a') {
+			if (children.length === 1 && node.children[0].tagName === 'a') {
+				console.log(children);
 				const link = node.children[0];
 				return (
 					<a
@@ -78,7 +107,7 @@ export function ThoughtDetail({ thought }) {
 						href={link.properties.href}
 						target="_blank"
 						rel="noreferrer"
-						className="btn-inline"
+						className={styles.link_block}
 					>
 						{link.children[0].value}
 					</a>

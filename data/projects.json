@@ -46,26 +46,20 @@
 		"slides": [
 			{
 				"id": 1,
-				"src": "/assets/featured/liblearn/liblearn.png",
-				"title": "liblearn",
+				"src": "/assets/featured/liblearn/liblearn_dark.png",
+				"title": "liblearn Home Dark",
 				"text": "Lorem ipsum and some more"
 			},
 			{
 				"id": 2,
-				"src": "/assets/featured/biri/biri_app.png",
-				"title": "liblearn second title",
+				"src": "/assets/featured/liblearn/liblearn_light.png",
+				"title": "liblearn Home Light",
 				"text": "Lorem ipsum and some more"
 			},
 			{
 				"id": 3,
-				"src": "/assets/featured/e-keeps/e-keeps.png",
-				"title": "liblearn third title",
-				"text": "Lorem ipsum and some more"
-			},
-			{
-				"id": 4,
-				"src": "/assets/featured/mpu/mpu.jpg",
-				"title": "liblearn fourth title",
+				"src": "/assets/featured/liblearn/liblearn_dark_post.png",
+				"title": "liblearn Post Dark Theme",
 				"text": "Lorem ipsum and some more"
 			}
 		]
@@ -81,15 +75,11 @@
 		"expanded": [
 			"biri is a startup with enormous potential for investors, business owners, and developers. Find out where you can contribute and how you can be part of it"
 		],
-		"graphic": "/assets/featured/biri/biri_app.png",
+		"graphic": "/assets/featured/biri/biri_home.png",
 		"tools": [
 			{
 				"name": "Jamstack",
 				"src": "/assets/web/jamstack.svg"
-			},
-			{
-				"name": "React.js",
-				"src": "/assets/web/react.svg"
 			},
 			{
 				"name": "Next.js",
@@ -120,13 +110,13 @@
 		"slides": [
 			{
 				"id": 1,
-				"src": "/assets/featured/biri/biri_app.png",
+				"src": "/assets/featured/biri/biri_home.png",
 				"title": "biri",
 				"text": "Lorem ipsum and some more"
 			},
 			{
 				"id": 2,
-				"src": "/assets/featured/e-keeps/e-keeps.png",
+				"src": "/assets/featured/biri/lodging.png",
 				"title": "biri second title",
 				"text": "Lorem ipsum and some more"
 			},
@@ -138,7 +128,7 @@
 			},
 			{
 				"id": 4,
-				"src": "/assets/featured/mpu/mpu.jpg",
+				"src": "/assets/featured/mpu/mpu.png",
 				"title": "biri fourth title",
 				"text": "Lorem ipsum and some more"
 			}
@@ -160,10 +150,6 @@
 			{
 				"name": "Jamstack",
 				"src": "/assets/web/jamstack.svg"
-			},
-			{
-				"name": "React.js",
-				"src": "/assets/web/react.svg"
 			},
 			{
 				"name": "Next.js",
@@ -200,7 +186,7 @@
 			},
 			{
 				"id": 2,
-				"src": "/assets/featured/biri/biri_app.png",
+				"src": "/assets/featured/biri/biri_home.png",
 				"title": "e-keeps second title",
 				"text": "Lorem ipsum and some more"
 			},
@@ -209,19 +195,13 @@
 				"src": "/assets/featured/liblearn/liblearn.png",
 				"title": "e-keeps third title",
 				"text": "Lorem ipsum and some more"
-			},
-			{
-				"id": 4,
-				"src": "/assets/featured/mpu/mpu.jpg",
-				"title": "e-keeps fourth title",
-				"text": "Lorem ipsum and some more"
 			}
 		]
 	},
 	{
 		"id": "mpu-digital-space",
 		"cat": "Web App",
-		"title": "Mpu digital space",
+		"title": "Mpu ds",
 		"detail": [
 			"The app features the culture and traditions of ndi Mpu in Enugu state, their festivities and attractions. It tells their stories and provides information on the population, local businesses and other relevant statistics.",
 			"It is not Facebook or WhatsApp feature-rich but it provides the community, and visitors a place to bond..."
@@ -229,15 +209,11 @@
 		"expanded": [
 			"... a project to learn and practice web development, ui/ux design and prototyping, as well as social research."
 		],
-		"graphic": "/assets/featured/mpu/mpu.jpg",
+		"graphic": "/assets/featured/mpu/mpu.png",
 		"tools": [
 			{
 				"name": "Jamstack",
 				"src": "/assets/web/jamstack.svg"
-			},
-			{
-				"name": "React.js",
-				"src": "/assets/web/react.svg"
 			},
 			{
 				"name": "Next.js",
@@ -268,26 +244,20 @@
 		"slides": [
 			{
 				"id": 1,
-				"src": "/assets/featured/mpu/mpu.jpg",
-				"title": "Mpu app",
+				"src": "/assets/featured/mpu/mpu_home.png",
+				"title": "Mpu digital space + directory",
 				"text": "Lorem ipsum and some more"
 			},
 			{
 				"id": 2,
-				"src": "/assets/featured/biri/biri_app.png",
-				"title": "Mpu app second title",
+				"src": "/assets/featured/mpu/mpu_c_a.png",
+				"title": "Culture and Attractions",
 				"text": "Lorem ipsum and some more"
 			},
 			{
 				"id": 3,
-				"src": "/assets/featured/liblearn/liblearn.png",
-				"title": "Mpu app third title",
-				"text": "Lorem ipsum and some more"
-			},
-			{
-				"id": 4,
-				"src": "/assets/featured/e-keeps/e-keeps.png",
-				"title": "Mpu app fourth title",
+				"src": "/assets/featured/mpu/mpu_biz.png",
+				"title": "Directory listing",
 				"text": "Lorem ipsum and some more"
 			}
 		]

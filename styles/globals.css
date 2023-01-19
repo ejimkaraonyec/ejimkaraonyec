@@ -3,9 +3,12 @@
 	--background-accent: hsl(212 97% 12%);
 	--foreground: hsl(222 58% 77%);
 	--foreground-accent: hsl(221 100% 90%);
-	--backdrop: 212 97% 12%;
 	--accent: hsl(207 95% 8%);
 	--brand: hsl(20 100% 50%);
+
+	--backdrop: 221 93% 5%;
+	--foredrop: 222 58% 77%;
+	--acedrop: 212 97% 12%;
 
 	--bx-sh-raised: hsla(219, 33%, 10%, 0.16) 0px 3px 6px,
 		hsla(219, 33%, 10%, 0.23) 0px 3px 6px;
@@ -23,6 +26,7 @@
 	--gap-hotel: 0.3rem;
 
 	--border-rad: 0.4rem;
+	--border-rad-sm: 0.2rem;
 }
 
 html {
@@ -45,7 +49,8 @@ html:focus-within {
 /* Set core root defaults */
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', Segoe UI, -apple-system, BlinkMacSystemFont, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-weight: 500;
 	font-size: 2rem;
 	line-height: 3.2rem;
@@ -114,20 +119,30 @@ input[type='reset'] {
 
 /* Style placeholder */
 
+:-ms-input-placeholder {
+	color: var(--foreground);
+}
+::-ms-input-placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder {
+	color: var(--foreground);
+}
+
 ::placeholder {
 	color: var(--foreground);
 	opacity: 1;
 	font-size: inherit;
 }
 
-:-ms-input-placeholder {
-	color: var(--foreground);
+/* Selection */
+::selection {
+	background-color: var(--foreground);
+	color: var(--background);
 }
-
-::-ms-input-placeholder {
-	color: var(--foreground);
+::-moz-selection {
+	background-color: var(--foreground);
+	color: var(--background);
 }
-
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 
 @media only screen and (prefers-reduced-motion: reduce) {
@@ -299,7 +314,8 @@ input[type='reset'] {
 .btn-inline:focus-within svg {
 	color: var(--foreground);
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 53.125em) {
+	/* 850px */
 	.inline-snap {
 		overflow-x: auto;
 		overscroll-behavior-inline: contain;
@@ -340,6 +356,8 @@ button,
 textarea,
 select {
 	font-size: 1.6rem;
+	line-height: 2.8rem;
+	font-weight: 400;
 }
 
 input,
@@ -356,8 +374,8 @@ input,
 textarea {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: var(--gap-echo);
+	padding-right: var(--gap-echo);
 }
 
 input,
@@ -365,7 +383,7 @@ textarea,
 select {
 	/* margin-bottom: 2rem; */
 	width: 100%;
-	border-radius: 0.25rem;
+	border-radius: var(--border-rad-sm);
 }
 
 input:focus-within,
@@ -374,7 +392,7 @@ textarea:focus-within {
 }
 
 textarea {
-	min-height: 12rem;
+	min-height: 16rem;
 }
 
 /* Choosing a file */
@@ -426,7 +444,7 @@ input[type='file']::file-selector-button:hover {
 	content: attr(aria-label);
 	position: absolute;
 	color: var(--brand);
-	background: var(--background);
+	background: hsl(var(--backdrop) / 0.9);
 	width: max-content;
 
 	top: -125%;
@@ -434,7 +452,7 @@ input[type='file']::file-selector-button:hover {
 	padding: 0.1rem 2rem 0.2rem;
 	font-size: 1.4rem;
 	font-weight: 800;
-	border-radius: 0.7rem;
+	border-radius: 0.2rem;
 	opacity: 0;
 	transform: scale(0);
 	transform-origin: top;
@@ -453,7 +471,7 @@ input[type='file']::file-selector-button:hover {
 .aria-left:hover::after,
 .aria-right:focus-visible::after,
 .aria-left:focus-visible::after {
-	opacity: 0.5;
+	opacity: 1;
 	transform: scale(1);
 	transition: transform 70ms linear, opacity 70ms linear;
 }
@@ -463,7 +481,8 @@ input[type='file']::file-selector-button:hover {
 	min-height: 100vh;
 	display: -ms-grid;
 	display: grid;
-	gap: var(--gap-bravo);
+	/* grid-template-rows: min-content 1fr min-content; */
+	gap: var(--gap-alpha);
 	align-content: stretch;
 }
 
@@ -507,6 +526,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 	gap: 2rem;
 }
 
@@ -536,7 +556,9 @@ header.header .download {
 	padding: var(--gap-hotel) var(--gap-foxtrot);
 	border-radius: 2px;
 }
-
+header.header .nav .active {
+	color: var(--foreground-accent);
+}
 /* /////////////////////////// Footer //////////////////// */
 
 footer .social-links {
@@ -613,7 +635,7 @@ footer :target .social-links {
 }
 
 .slider .s_content {
-	background-color: hsl(var(--backdrop) / 0.9);
+	background-color: hsl(var(--acedrop) / 0.9);
 	border-top-left-radius: var(--border-rad);
 	position: absolute;
 	bottom: 0;
@@ -637,7 +659,7 @@ footer :target .social-links {
 	font-size: 5rem;
 	font-weight: 900;
 	line-height: 4rem;
-	background-color: hsl(var(--backdrop) / 0.7);
+	background-color: hsl(var(--acedrop) / 0.7);
 	border: 1px solid var(--foreground);
 	border-radius: 50%;
 	height: 6rem;
@@ -651,7 +673,7 @@ footer :target .social-links {
 
 .slider .btn-a:hover {
 	color: var(--foreground-accent);
-	background-color: hsl(var(--backdrop) / 0.5);
+	background-color: hsl(var(--acedrop) / 0.5);
 }
 
 .slider .btn-a#prev-a {
@@ -662,7 +684,8 @@ footer :target .social-links {
 	right: 2.5rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 31.25em) {
+	/* 500px */
 	.slider .s_content {
 		bottom: -100px;
 		left: 0;
@@ -676,12 +699,14 @@ footer :target .social-links {
 }
 
 /* /////////////////////////// Queries //////////////////// */
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 64em) {
+	/* 1024px */
 	html {
 		font-size: 56.25%;
 	}
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 53.125em) {
+	/* 850px */
 	html {
 		font-size: 53.125%;
 	}
@@ -690,7 +715,8 @@ footer :target .social-links {
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 40.625em) {
+	/* 650px */
 	html {
 		font-size: 50%;
 	}
@@ -703,12 +729,14 @@ footer :target .social-links {
 		letter-spacing: 0.2rem;
 	}
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 34.375em) {
+	/* 550px */
 	html {
 		font-size: 46.875%;
 	}
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 28.125em) {
+	/* 450px */
 	html {
 		font-size: 43.75%;
 	}
@@ -716,12 +744,14 @@ footer :target .social-links {
 		gap: var(--gap-delta);
 	}
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 22.5em) {
+	/* 360px */
 	header.header .nav {
 		gap: var(--gap-echo);
 	}
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 20.625em) {
+	/* 330px */
 	header.header .nav {
 		gap: var(--gap-echo);
 		font-size: 1.8rem;

@@ -29,11 +29,9 @@ const SkillDetails = ({ skill }) => {
 				<title>{`Skills | ${skill.title}`}</title>
 				<meta name="description" content={skill.detail} />
 			</Head>
-			<main className="centered">
-				<h2 className="ht3 title brand">Skills | {skill.title}</h2>
-				<SkillDetail skill={skill} />
-				<Inquiry skill={true} interest={skill.title} />
-			</main>
+			<h2 className="ht3 title brand">Skills | {skill.title}</h2>
+			<SkillDetail skill={skill} />
+			<Inquiry skill={true} interest={skill.title} />
 		</>
 	);
 };

@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import { useStateContext } from '../../hooks/useStateContext';
+import { montserrat } from '../../pages/_app';
 import { DownloadIcon, LogoIcon } from '../ui/icons';
+import { NavLink } from './navlink';
 
 export default function Header() {
 	const { home } = useStateContext();
 	return (
-		<header className="header">
-			{/* <div className="content"> */}
+		<header className={`header ${montserrat.className}`}>
 			<Link href="/" className="flex">
 				<LogoIcon />
 			</Link>
@@ -19,11 +20,14 @@ export default function Header() {
 				)}
 				{!home && (
 					<>
-						<Link href="/skills">Skills</Link>
-						<Link href="/projects">Projects</Link>
+						<NavLink href="/skills">Skills</NavLink>
+						<NavLink href="/projects">Projects</NavLink>
+						{/* <Link href="/skills">Skills</Link> */}
+						{/* <Link href="/projects">Projects</Link> */}
 					</>
 				)}
-				<Link href="/thoughts">Thoughts</Link>
+				<NavLink href="/thoughts">Thoughts</NavLink>
+				{/* <Link href="/thoughts">Thoughts</Link> */}
 				<a
 					href="/assets/doc/ejimkaraonye_c_curriculum_vitae.pdf"
 					download="Ejimkaraonye Chukwuemeka CV"
@@ -33,7 +37,6 @@ export default function Header() {
 					<span>Curriculum Vitae</span>
 				</a>
 			</nav>
-			{/* </div> */}
 		</header>
 	);
 }

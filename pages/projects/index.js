@@ -21,14 +21,12 @@ export default function Projects({ projects }) {
 					content="Featured projects of Ejimkaraonye, Chukwuemeka, an Academic Researcher, Software Engineer, UI / UX Designer and BI Analyst with years of experience researching, designing, and building data-driven social and software solutions."
 				/>
 			</Head>
-			<main className="centered">
-				<h2 className="ht2 title brand">Projects</h2>
-				<div className={styles.projectCards}>
-					{projects.map((project) => (
-						<ProjectCard project={project} key={project.id} />
-					))}
-				</div>
-			</main>
+			{/* <h2 className="ht2 title brand">Projects</h2> */}
+			<div className={styles.projectCards}>
+				{projects.map((project) => (
+					<ProjectCard project={project} key={project.id} />
+				))}
+			</div>
 		</>
 	);
 }

@@ -1,34 +1,67 @@
+.portalBackdrop,
 .modalBackdrop {
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: hsl(var(--backdrop) / 0.1);
+	background-color: hsl(var(--backdrop) / 0.99);
 	display: grid;
 	place-content: center;
 	text-align: center;
-	z-index: 2;
+	/* z-index: 2; */
 }
-.modal {
+.portal {
 	padding: var(--gap-charlie);
 	background-color: var(--background-accent);
 	border-radius: var(--border-rad);
 	position: relative;
 }
-.modal button {
-	border-radius: 50%;
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+	.modalBackdrop {
+		background-color: hsl(var(--backdrop) / 0.96);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
+}
+.modal {
+	padding-left: var(--gap-bravo);
+	padding-right: var(--gap-bravo);
+	border-radius: var(--border-rad);
+	width: 100vw;
+	/* height: min(100rem, 90vh); */
+	height: 100vh;
+}
+.portal .btn,
+.modal .btn {
 	position: absolute;
 	box-shadow: var(--bx-sh-light-accent);
+}
+.portal .btn {
+	border-radius: 50%;
 	top: var(--gap-foxtrot);
 	left: var(--gap-foxtrot);
+}
+.portal .btn svg {
+	height: var(--gap-charlie);
+}
+.modal .btn {
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	border-radius: var(--border-rad);
+	padding: var(--gap-foxtrot) var(--gap-echo);
+	background-color: hsl(var(--acedrop) / 0.4);
+	top: var(--gap-delta);
+	left: var(--gap-bravo);
+	z-index: 1;
 }
 .inquiryForm {
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-delta);
-	background-color: var(--background-accent);
-	padding: var(--gap-charlie);
+	/* background-color: var(--background-accent); */
+	/* padding: var(--gap-delta); */
 }
 .inline {
 	flex-wrap: wrap;
@@ -39,16 +72,96 @@
 }
 .input,
 .textarea {
-	background-color: var(--background);
+	border-bottom: 1px solid hsl(var(--foredrop) / 0.4);
+	background-color: var(--background-accent);
 }
-.btn {
+.inquiryForm .btn {
 	gap: var(--gap-foxtrot);
 	align-self: center;
+	margin-top: -1rem;
 }
-.btn svg {
+.inquiryForm .btn svg {
 	color: var(--brand);
 	height: 1.6rem;
 }
 .error {
 	border: 0.02rem solid var(--brand);
+}
+
+/* ////////////////////////////// Load ////////////////////////////// */
+.lcContainer {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.loaderCircles {
+	height: 50px;
+	/* margin-top: -50px; */
+	transform-origin: bottom center;
+	animation: rotate 3s linear infinite;
+}
+
+.lcCircle {
+	display: inline-block;
+	background-color: hsl(var(--brand));
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	transform: scale(0);
+	animation: grow 1.5s linear infinite;
+	margin: -10px;
+}
+
+.lcCircle:nth-child(2) {
+	background-color: hsl(var(--accent));
+	animation-delay: 0.75s;
+}
+
+.loaderLinear {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loaderLinear > span {
+	display: inline-block;
+	background-color: hsl(var(--brand));
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	margin: 0 8px;
+	transform: translate3d(0);
+	animation: bounce 0.45s infinite alternate;
+}
+
+.loaderLinear > span:nth-child(2) {
+	background-color: hsl(var(--accent));
+	animation-delay: 0.15s;
+}
+
+.loaderLinear > span:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes grow {
+	50% {
+		transform: scale(1);
+	}
+}
+
+@keyframes bounce {
+	to {
+		width: 16px;
+		height: 16px;
+		transform: translate3d(0, -16px, 0);
+	}
 }

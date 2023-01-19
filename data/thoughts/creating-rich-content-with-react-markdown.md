@@ -10,6 +10,4 @@ isFeatured: true
 
 ## Make every post unique
 
-`react-markdown` uses a syntax tree to build the virtual dom which makes it easy to update only the DOM elements that change instead of completely overwriting the DOM. It is 100% CommonMark compliant and has plugins to support other syntax extensions such as _GFM_
-
-[Start Learning](https://www.npmjs.com/package/react-markdown#use)
+`react-markdown` uses a syntax tree to build the virtual dom which makes it easy to update only the DOM elements that change instead of completely overwriting the DOM. It is 100% CommonMark compliant and has plugins to support other syntax extensions such as _GFM_ [Start Learning](https://www.npmjs.com/package/react-markdown#use).

@@ -2,13 +2,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: var(--gap-echo);
+	gap: var(--gap-charlie);
 }
 
 .skillCards {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--gap-bravo);
+	gap: var(--gap-alpha);
 	overflow: hidden;
 }
 
@@ -16,7 +16,7 @@
 	flex: 1 0 500px;
 	border-radius: var(--border-rad);
 	background-color: var(--background-accent);
-	padding: var(--gap-charlie);
+	padding: var(--gap-charlie) var(--gap-delta);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -56,8 +56,8 @@
 }
 
 .skillDetails {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: var(--gap-foxtrot);
+	padding-bottom: var(--gap-foxtrot);
 }
 
 .skillTools {
@@ -85,22 +85,29 @@
 }
 
 /* /////////////////////////// Details //////////////////// */
+.institution {
+	margin-top: -1rem;
+}
 .detail {
 	background-color: var(--background-accent);
-	padding: var(--gap-charlie);
+	padding: var(--gap-delta);
+	border-radius: var(--border-rad);
 }
 /* /////////////////////////// Queries //////////////////// */
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 71.875em) {
+	/* 1150px */
 	.skillCard {
 		flex: 1 0 330px;
 	}
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 62.5em) {
+	/* 1000px */
 }
 
-@media only screen and (max-width: 763px) {
+@media only screen and (max-width: 47.75em) {
+	/* 764px */
 	.skillCard:nth-child(odd).skillAppear {
 		transition: all 600ms ease;
 	}
@@ -110,7 +117,8 @@
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 31.25em) {
+	/* 500px */
 	.skillCard {
 		flex: 1 0 254px;
 	}

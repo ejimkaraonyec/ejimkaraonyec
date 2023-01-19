@@ -29,9 +29,7 @@ const ThoughtDetails = ({ selected }) => {
 				<title>{`Thoughts | ${selected.title}`}</title>
 				<meta name="description" content={selected.detail} />
 			</Head>
-			<main className="centered">
-				<ThoughtDetail thought={selected} />
-			</main>
+			<ThoughtDetail thought={selected} />
 		</>
 	);
 };

@@ -22,7 +22,7 @@ export function SkillCard({ skill }) {
 						width="0"
 						height="0"
 						alt={skill.title}
-						priority="true"
+						priority
 						style={{ width: 'auto', height: 'auto' }}
 						className={styles.skillImg}
 					/>
@@ -45,11 +45,11 @@ export function SkillCard({ skill }) {
 							>
 								<Image
 									src={tool.src}
-									width="0"
 									height="0"
+									width="0"
 									alt={tool.name}
-									priority="true"
-									style={{ width: 'auto', height: 'auto' }}
+									priority
+									style={{ height: 'auto', width: 'auto' }}
 								/>
 							</button>
 						))}
@@ -64,7 +64,9 @@ export function SkillDetail({ skill }) {
 		<>
 			<div className={styles.content}>
 				<h2 className="ht4">{skill.qualification}</h2>
-				<p className="ht5 italic">{skill.institution}</p>
+				<p className={`ht5 italic ${styles.institution}`}>
+					{skill.institution}
+				</p>
 				<div className={styles.detail}>
 					<p>{skill.detail}</p>
 				</div>

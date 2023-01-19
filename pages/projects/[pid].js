@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { ProjectDetail } from '../../comps/projects/projects';
-// import { Slider } from '../../comps/ui/slider';
 import { Inquiry } from '../../comps/ui/ui';
 import { getData } from '../../lib/fetchUtil';
 // import styles from '../../styles/Projects.module.css';
@@ -30,12 +29,9 @@ const ProjectDetails = ({ project }) => {
 				<title>{`Featured | ${project.title}`}</title>
 				<meta name="description" content={project.detail[0]} />
 			</Head>
-			<main className="centered">
-				<h2 className="ht3 title brand">Featured | {project.title}</h2>
-				<ProjectDetail project={project} />
-				{/* <Slider slides={project.slides} /> */}
-				<Inquiry interest={project.title} />
-			</main>
+			<h2 className="ht3 title brand">Featured | {project.title}</h2>
+			<ProjectDetail project={project} />
+			<Inquiry interest={project.title} />
 		</>
 	);
 };

@@ -52,16 +52,5 @@ export default NextAuth({
 });
 ```
 
-[Auth.js](https://authjs.dev/)
-
-[Get Started](https://authjs.dev/getting-started/introduction)
-
+[Auth.js](https://authjs.dev/) [Get Started](https://authjs.dev/getting-started/introduction)
 [NextAuth.js](https://next-auth.js.org/)
-
-Will now run some tests
-
-[NextAuth.js](https://next-auth.js.org/)
-
-Lets see if the style for the first three links afects the last
-
-`<time className={styles.thoughtDate}>Written {formatedDate(updateDate)}</time>`

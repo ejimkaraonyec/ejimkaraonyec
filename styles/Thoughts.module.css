@@ -1,11 +1,19 @@
+.featured {
+}
+.notFeatured {
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap-alpha);
+}
 .thoughtCards {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--gap-bravo);
+	gap: var(--gap-alpha);
 }
 
 .thoughtCard {
-	flex: 1 0 300px;
+	flex: 1 0 350px;
 	border-radius: var(--border-rad);
 	background-color: var(--background-accent);
 	display: flex;
@@ -29,9 +37,8 @@
 }
 
 .cardImage {
-	display: flex;
-	justify-content: center;
-	max-height: 25rem;
+	height: 25rem;
+	position: relative;
 	border-top-left-radius: var(--border-rad);
 	border-top-right-radius: var(--border-rad);
 }
@@ -42,14 +49,21 @@
 	border-top-right-radius: var(--border-rad);
 }
 
-.content {
+.content,
+.thoughtItem {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: var(--gap-charlie);
+	padding: var(--gap-delta);
 	gap: var(--gap-echo);
 }
-
+.thoughtItem {
+	flex: 1 0 350px;
+	border: 1px solid hsl(var(--foredrop) / 0.4);
+	border-radius: var(--border-rad);
+	padding: var(--gap-delta);
+	gap: var(--gap-echo);
+}
 .thoughtDate {
 	margin-top: -0.6rem;
 }
@@ -58,7 +72,7 @@
 .detailContent {
 	display: -ms-grid;
 	display: grid;
-	gap: var(--gap-delta);
+	gap: var(--gap-charlie);
 }
 .header {
 	gap: var(--gap-echo);
@@ -88,11 +102,15 @@
 	line-height: 2.5rem;
 }
 .markdown .image {
-	display: flex;
-	justify-content: center;
-	max-height: 30rem;
+	/* display: flex; */
+	/* justify-content: center; */
+	border-radius: var(--border-rad);
+	height: 50rem;
+	position: relative;
+	overflow: hidden;
 }
 .markdown .image img {
+	border-radius: var(--border-rad);
 	aspect-ratio: 16 / 9;
 	object-fit: cover;
 }
@@ -125,15 +143,24 @@
 	word-break: break-all;
 	white-space: pre-wrap;
 }
-.markdown > .code,
-.markdown > a {
+.markdown > .code {
 	display: inline-block;
 }
-.markdown > * + * {
-	margin-top: 1.5rem;
+.markdown a {
+	/* display: inline-block; */
+	border-bottom: 1px solid var(--brand);
+	transition: all 200ms;
 }
-.markdown > a + a {
-	margin-left: 0.5rem;
+.markdown .link_block {
+	display: block;
+	width: fit-content;
+}
+.markdown a:hover,
+.markdown a:focus-within {
+	border-bottom: 1px solid var(--foreground);
+}
+.markdown > * + * {
+	margin-top: var(--gap-delta);
 }
 
 /* ????????? Animation ?????????? */
@@ -156,10 +183,15 @@
 }
 
 /* /////////////////////////// Queries //////////////////// */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 64em) {
+	/* 1024px */
+	.markdown .image {
+		height: 40rem;
+	}
 }
 
-@media only screen and (max-width: 763px) {
+@media only screen and (max-width: 47.75em) {
+	/* 764px */
 	.thoughtCard:nth-child(odd).thoughtAppear {
 		transition: all 600ms ease;
 	}
@@ -168,12 +200,19 @@
 		transition: all 600ms ease;
 	}
 	.markdown pre {
-		width: min(90vw, 763px);
+		width: min(90vw, 47.75em);
+	}
+	.markdown .image {
+		height: 30rem;
 	}
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 26.5em) {
+	/* 424px */
 	.thoughtCard {
+		flex: 1 0 250px;
+	}
+	.thoughtItem {
 		flex: 1 0 250px;
 	}
 }

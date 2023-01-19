@@ -40,13 +40,15 @@
 	margin-top: -2rem;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 64em) {
+	/* 1024px */
 	.hero .style svg {
 		opacity: 0.3;
 	}
 }
 
-@media (max-width: 801px) {
+@media only screen and (max-width: 50em) {
+	/* 800px */
 	.heroIntro {
 		font-size: 3.6rem;
 	}
@@ -57,7 +59,8 @@
 		opacity: 0.2;
 	}
 }
-@media (max-width: 739px) {
+@media only screen and (max-width: 46.25em) {
+	/* 740px */
 	.heroIntro {
 		font-size: 3.6rem;
 	}
@@ -68,7 +71,8 @@
 		max-width: 45ch;
 	}
 }
-@media (max-width: 709px) {
+@media only screen and (max-width: 44.25em) {
+	/* 708px */
 	.heroIntro {
 		font-size: 3rem;
 	}
@@ -76,7 +80,8 @@
 		font-size: 4rem;
 	}
 }
-@media (max-width: 611px) {
+@media only screen and (max-width: 38.125em) {
+	/* 610px */
 	.heroIntro {
 		font-size: 2.8rem;
 		margin-left: 0;
@@ -89,7 +94,8 @@
 		max-width: 43ch;
 	}
 }
-@media (max-width: 582px) {
+@media only screen and (max-width: 36.5em) {
+	/* 584px */
 	.heroIntro {
 		font-size: 2.6rem;
 	}
@@ -100,12 +106,14 @@
 		max-width: 42ch;
 	}
 }
-@media (max-width: 553px) {
+@media only screen and (max-width: 34.5em) {
+	/* 552px */
 	.hero .title {
 		letter-spacing: 0.12rem;
 	}
 }
-@media (max-width: 515px) {
+@media only screen and (max-width: 32.25em) {
+	/* 516px */
 	.hero .title {
 		font-size: 3.5rem;
 	}
@@ -113,12 +121,14 @@
 		max-width: 36ch;
 	}
 }
-@media (max-width: 499px) {
+@media only screen and (max-width: 31.25em) {
+	/* 500px */
 	.hero .title {
 		font-size: 3.2rem;
 	}
 }
-@media (max-width: 458px) {
+@media only screen and (max-width: 28.625em) {
+	/* 458px */
 	.heroIntro {
 		font-size: 2.5rem;
 	}
@@ -126,7 +136,8 @@
 		font-size: 3rem;
 	}
 }
-@media (max-width: 402px) {
+@media only screen and (max-width: 25.125em) {
+	/* 402px */
 	.heroIntro {
 		font-size: 3rem;
 	}
@@ -140,7 +151,8 @@
 		content: 'Ejimkaraonye, C';
 	}
 }
-@media (max-width: 356px) {
+@media only screen and (max-width: 22.25em) {
+	/* 356px */
 	.hero .style svg {
 		opacity: 0.1;
 	}
@@ -151,7 +163,8 @@
 		font-size: 4.5rem;
 	}
 }
-@media (max-width: 321px) {
+@media only screen and (max-width: 20em) {
+	/* 320px */
 	.heroIntro {
 		font-size: 2.5rem;
 	}

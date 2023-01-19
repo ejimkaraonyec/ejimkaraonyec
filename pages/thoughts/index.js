@@ -1,17 +1,21 @@
 import Head from 'next/head';
-import { ThoughtCard } from '../../comps/thoughts/thoughts';
-import { getFeaturedThoughts } from '../../lib/fetchUtil';
+import { NotFeatured, ThoughtCard } from '../../comps/thoughts/thoughts';
+import {
+	getFeaturedNullThoughts,
+	getFeaturedThoughts,
+} from '../../lib/fetchUtil';
 import styles from '../../styles/Thoughts.module.css';
 
 export const getStaticProps = async () => {
 	const featured = getFeaturedThoughts();
+	const nullFeatured = getFeaturedNullThoughts();
 	return {
-		props: { thoughts: featured },
+		props: { featured, nullFeatured },
 		// revalidate: 1800,
 	};
 };
 
-export default function Thoughts({ thoughts }) {
+export default function Thoughts({ featured, nullFeatured }) {
 	return (
 		<>
 			<Head>
@@ -21,16 +25,15 @@ export default function Thoughts({ thoughts }) {
 					content="Shared thoughts: ...ejimkaraonyec, anonymous, friends, frenemies ..."
 				/>
 			</Head>
-			<main className="centered">
-				<section className={`content ${styles.featured}`}>
-					<h2 className="ht2 brand title">Featured</h2>
-					<section className={styles.thoughtCards}>
-						{thoughts.map((thought) => (
-							<ThoughtCard thought={thought} key={thought.slug} />
-						))}
-					</section>
+			<section className={`content ${styles.featured}`}>
+				{/* <h2 className="ht2 brand title">Featured</h2> */}
+				<section className={styles.thoughtCards}>
+					{featured.map((thought) => (
+						<ThoughtCard thought={thought} key={thought.slug} />
+					))}
 				</section>
-			</main>
+			</section>
+			<NotFeatured thoughts={nullFeatured} />
 		</>
 	);
 }

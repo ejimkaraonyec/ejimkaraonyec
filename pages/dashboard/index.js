@@ -7,14 +7,11 @@ const Dash = () => {
 			<Head>
 				<title>ejimkaraonyec | dashboard</title>
 			</Head>
-
-			<main className={`centered`}>
-				<h2 className="ht2 title">Dashboard</h2>
-				<div className={` flex-col ${styles.content}`}>
-					<Nav />
-					<ListEm />
-				</div>
-			</main>
+			<h2 className="ht2 title">Dashboard</h2>
+			<div className={` flex-col ${styles.content}`}>
+				<Nav />
+				<ListEm />
+			</div>
 		</>
 	);
 };

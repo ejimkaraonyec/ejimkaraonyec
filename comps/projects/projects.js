@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
+import { shimmer, toBase64 } from '../../lib/shimmer';
 import styles from '../../styles/Projects.module.css';
+import { Images } from '../ui/images';
 
 export function ProjectCard({ project }) {
 	const { ref, inView } = useInView({
@@ -32,16 +34,17 @@ export function ProjectCard({ project }) {
 							{project.tools.map((tool, index) => (
 								<button
 									disabled="disabled"
+									type="button"
 									aria-label={tool.name}
 									key={index}
-									className="aria-left btn"
+									className={styles.btn_aria}
 								>
 									<Image
 										src={tool.src}
 										width="0"
 										height="0"
 										alt={tool.name}
-										priority="true"
+										priority
 										style={{ width: 'auto', height: 'auto' }}
 									/>
 								</button>
@@ -50,10 +53,15 @@ export function ProjectCard({ project }) {
 					</div>
 					<figure className={styles.projectStyle}>
 						<Image
+							className={styles.graphic}
 							src={project.graphic}
-							width={1000}
-							height={500}
 							alt={project.id}
+							fill
+							sizes="100vw"
+							placeholder="blur"
+							blurDataURL={`data:image/svg+xml;base64,${toBase64(
+								shimmer(250, 100)
+							)}`}
 						/>
 					</figure>
 				</Link>
@@ -64,7 +72,7 @@ export function ProjectCard({ project }) {
 export function ProjectDetail({ project }) {
 	return (
 		<>
-			<div className={styles.content}>
+			<section className={styles.content}>
 				<h2 className="ht4">{project.cat}</h2>
 				<div className={`flow ${styles.details}`}>
 					{project.detail.map((det, index) => (
@@ -77,6 +85,9 @@ export function ProjectDetail({ project }) {
 							<p key={index}>{det}</p>
 						))}
 					</div>
+				)}
+				{project.slides && project.slides.length > 0 && (
+					<Images slides={project.slides} />
 				)}
 				{project.external.online && (
 					<p>
@@ -114,7 +125,7 @@ export function ProjectDetail({ project }) {
 						.
 					</p>
 				)}
-			</div>
+			</section>
 		</>
 	);
 }
