@@ -111,25 +111,13 @@
 			{
 				"id": 1,
 				"src": "/assets/featured/biri/biri_home.png",
-				"title": "biri",
+				"title": "biri home",
 				"text": "Lorem ipsum and some more"
 			},
 			{
 				"id": 2,
 				"src": "/assets/featured/biri/lodging.png",
-				"title": "biri second title",
-				"text": "Lorem ipsum and some more"
-			},
-			{
-				"id": 3,
-				"src": "/assets/featured/liblearn/liblearn.png",
-				"title": "biri third title",
-				"text": "Lorem ipsum and some more"
-			},
-			{
-				"id": 4,
-				"src": "/assets/featured/mpu/mpu.png",
-				"title": "biri fourth title",
+				"title": "biri lodging",
 				"text": "Lorem ipsum and some more"
 			}
 		]
@@ -182,18 +170,6 @@
 				"id": 1,
 				"src": "/assets/featured/e-keeps/e-keeps.png",
 				"title": "e-keeps",
-				"text": "Lorem ipsum and some more"
-			},
-			{
-				"id": 2,
-				"src": "/assets/featured/biri/biri_home.png",
-				"title": "e-keeps second title",
-				"text": "Lorem ipsum and some more"
-			},
-			{
-				"id": 3,
-				"src": "/assets/featured/liblearn/liblearn.png",
-				"title": "e-keeps third title",
 				"text": "Lorem ipsum and some more"
 			}
 		]
