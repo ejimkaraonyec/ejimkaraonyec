@@ -22,7 +22,7 @@ export default function HomeLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
 					'container min-h-screen font-sans antialiased grainy',
