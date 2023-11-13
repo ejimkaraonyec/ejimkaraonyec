@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	],
 };
 
-export default function HomeLayout({
+export default function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
@@ -25,7 +25,7 @@ export default function HomeLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					'container min-h-screen font-sans antialiased grainy',
+					'min-h-screen font-sans antialiased',
 					fontSans.variable,
 					headFont.variable
 				)}

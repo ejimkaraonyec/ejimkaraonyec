@@ -11,7 +11,7 @@ const Paths = () => {
 			<div className="max-w-5xl flex flex-wrap gap-4 justify-center">
 				<Link
 					href={'/academics'}
-					className="flex-1 min-w-[250px] bg-card text-card-foreground rounded-md border shadow-sm p-6 space-y-2"
+					className="grainy flex-1 min-w-[250px] rounded-md border border-ring shadow-sm p-6 space-y-2"
 				>
 					<h3 className={cn('font-bold text-xl font-heading')}>
 						<StackIcon className="w-14 h-14 text-primary" />
@@ -24,7 +24,7 @@ const Paths = () => {
 				</Link>
 				<Link
 					href={'/tech'}
-					className="flex-1 min-w-[250px] bg-card text-card-foreground rounded-md border shadow-sm p-6 space-y-2"
+					className="grainy flex-1 min-w-[250px] bg-card text-card-foreground rounded-md border shadow-sm p-6 space-y-2"
 				>
 					<h3 className={cn('font-bold text-xl font-heading')}>
 						<CodeIcon className="w-14 h-14 text-primary" />
