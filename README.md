@@ -1,4 +1,4 @@
-[![Header](/gitart.svg 'ejimkaraonyec')](https://ejimkaraonyec.com/)
+[![Header](/gitart.svg 'ejimkaraonyec')](https://ejimkaraonyec.vercel.app/)
 
 ## Technologies & Tools
 
@@ -29,4 +29,4 @@
 [![](https://img.shields.io/badge/linkedin-ff4500?style=social&logo=linkedin)](https://www.linkedin.com/in/ejimkaraonyec)
 [![](https://img.shields.io/badge/@ejimkaraonyec-ff4500?style=social&logo=telegram)](https://t.me/ejimkaraonyec)
 [![](https://img.shields.io/badge/Google%20Scholar-ff4500?style=social&logo=google-scholar)](https://scholar.google.com/citations?user=b6OGHAgAAAAJ&hl=en)
-[![](https://img.shields.io/badge/portfolio-ff4500?style=social&logo=github)](https://ejimkaraonyec.com)
+[![](https://img.shields.io/badge/portfolio-ff4500?style=social&logo=github)](https://ejimkaraonyec.vercel.app)
