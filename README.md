@@ -29,6 +29,12 @@
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 ![Tableau](https://img.shields.io/badge/Tableau-005571?style=flat-square&logo=tableau)
 ![Anaconda](https://img.shields.io/badge/-Anaconda-311C87?style=flat-square&logo=anaconda)
+![Adobe Illustrator](https://img.shields.io/badge/-Adobe%20Illustrator-black?style=flat-square&logo=adobeillustrator)
+![Adobe XD](https://img.shields.io/badge/-Adobe%20XD-black?style=flat-square&logo=adobexd)
+![Figma](https://img.shields.io/badge/-Figma-black?style=flat-square&logo=figma)
+![Canva](https://img.shields.io/badge/-Canva-purple?style=flat-square&logo=canva)
+![Asana](https://img.shields.io/badge/-Asana-black?style=flat-square&logo=asana)
+![Framer](https://img.shields.io/badge/-Framer-black?style=flat-square&logo=framer)
 
 ## Reach out!
 
