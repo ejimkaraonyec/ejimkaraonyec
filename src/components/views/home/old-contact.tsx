@@ -5,14 +5,14 @@ import { useState } from 'react';
 
 import { Button, buttonVariants } from '@/components/ui/button';
 import {
-	Drawer,
-	DrawerContent,
-	DrawerDescription,
-	DrawerFooter,
-	DrawerHeader,
-	DrawerTitle,
-	DrawerTrigger,
-} from '@/components/ui/drawer';
+	Sheet,
+	SheetContent,
+	SheetDescription,
+	SheetFooter,
+	SheetHeader,
+	SheetTitle,
+	SheetTrigger,
+} from '@/components/ui/sheet';
 
 import { cn } from '@/lib/utils';
 import { ContactForm } from './contact-form';
@@ -20,19 +20,18 @@ import { ContactForm } from './contact-form';
 const Contact = () => {
 	const [open, setOpen] = useState(false);
 	return (
-		<Drawer open={open} onOpenChange={setOpen}>
-			<DrawerTrigger asChild>
+		<Sheet open={open} onOpenChange={setOpen}>
+			<SheetTrigger asChild>
 				<Button>
 					<PaperPlaneIcon className="mr-2" />
 					Get in Touch
 				</Button>
-			</DrawerTrigger>
-			<DrawerContent>
-				<DrawerHeader className="space-y-1">
-					<DrawerTitle>Send an Email</DrawerTitle>
-					<DrawerDescription className="leading-none">
-						Fill out the form below or contact me with your favourite email
-						client at{' '}
+			</SheetTrigger>
+			<SheetContent side={'bottom'}>
+				<SheetHeader className="space-y-1">
+					<SheetTitle>Send an Email</SheetTitle>
+					<SheetDescription className="leading-tight">
+						or contact me with your favourite email client at{' '}
 						<a
 							href="mailto:ejimkaraonye@gmail.com"
 							target="_blank"
@@ -41,16 +40,16 @@ const Contact = () => {
 								buttonVariants({ variant: 'link', className: 'pl-0' })
 							)}
 						>
-							ejimkaraonyec@gmail.com
+							ejimkaraonyec
 							<Link2Icon className="w-3 h-3" />
 							<span className="sr-only">ejimkaraonyec@gmail.com</span>
 						</a>
-					</DrawerDescription>
-				</DrawerHeader>
+					</SheetDescription>
+				</SheetHeader>
 				<ContactForm setOpen={setOpen} />
-				<DrawerFooter></DrawerFooter>
-			</DrawerContent>
-		</Drawer>
+				<SheetFooter></SheetFooter>
+			</SheetContent>
+		</Sheet>
 	);
 };
 
