@@ -6,7 +6,7 @@ import {
 import React from 'react';
 
 import docuMentor from '@/lib/assets/DocuMentor.png';
-import fbcImg from '@/lib/assets/fbc.png';
+import oursportifyImg from '@/lib/assets/oursportify.png';
 import taskitlyImg from '@/lib/assets/taskitly.jpeg';
 
 export const links = [
@@ -68,11 +68,11 @@ export const projectsData = [
 		imageUrl: docuMentor,
 	},
 	{
-		title: 'FBC',
+		title: 'Sportify (oursportify)',
 		description:
 			'A Football Betting Community. It has features like betting, chatting and video calls.',
-		tags: ['React', 'TypeScript', 'Tailwind', 'Redux', 'Laravel'],
-		imageUrl: fbcImg,
+		tags: ['React', 'TypeScript', 'Tailwind', 'RTK Query', 'Laravel', 'APIs'],
+		imageUrl: oursportifyImg,
 	},
 	{
 		title: 'Taskitly',
@@ -86,23 +86,37 @@ export const projectsData = [
 export const skillsData = [
 	'HTML',
 	'CSS',
+	'Tailwind',
 	'JavaScript',
 	'TypeScript',
 	'React',
 	'Next.js',
 	'Solidjs',
+	'Laravel',
+	'Python',
+	'C',
+	'Linux',
+	'Bash',
 	'Git',
-	'Tailwind',
 	'Prisma',
 	'Drizzle',
-	'MongoDB',
 	'PlanetScale',
+	'Neon',
+	'Firebase',
+	'Supabase',
+	'MongoDB',
 	'Redux',
+	'RTK Query',
+	'Tanstack Query',
+	'NodeJs',
 	'Express',
 	'PostgreSQL',
 	'MySQL',
-	'Python',
-	'Framer Motion',
+	'Adobe Illustrator',
+	'Adobe XD',
+	'Figma',
+	'Canva',
+	'Framer',
 ] as const;
 
 export const cvAcademics = {
@@ -112,9 +126,15 @@ export const cvAcademics = {
 	updateDate: 'updated august 2023',
 };
 export const cvTech = {
-	title: 'se curriculum vitae',
+	title: 'se resume',
 	downloadLink: '/doc/ejimkaraonye_c_software_engineering_curriculum_vitae.pdf',
-	downloadName: 'ejimkaraonye_c_se_cv',
+	downloadName: 'ejimkaraonye_c_se_resume',
 	updateDate: 'updated september 2023',
 };
-export const cvData = [{ ...cvAcademics }, { ...cvTech }];
+export const resumeUIUX = {
+	title: 'ui/ux resume',
+	downloadLink: '/doc/ejimkaraonye_c_software_engineering_curriculum_vitae.pdf',
+	downloadName: 'ejimkaraonye_c_ui_ux_resume',
+	updateDate: 'updated April 2024',
+};
+export const cvData = [{ ...cvAcademics }, { ...cvTech }, { ...resumeUIUX }];
